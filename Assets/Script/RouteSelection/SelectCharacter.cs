@@ -1,8 +1,12 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class SelectCharacter : MonoBehaviour
 {
+    public UnityEvent onSelectCharacter;
+    public int storyIndex;
     public Image charImage;
     public GameObject homePanel;
     public GameObject routePanel;
@@ -21,6 +25,7 @@ public class SelectCharacter : MonoBehaviour
         {
             homePanel.SetActive(false);
             routePanel.SetActive(true);
+            onSelectCharacter?.Invoke();
         }
     }
 }
