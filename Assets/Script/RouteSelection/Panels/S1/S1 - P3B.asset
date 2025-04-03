@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: S1 - P3B
   m_EditorClassIdentifier: 
   text: 
-  options: []
+  options:
+  - optionText: 
+    nextPanelIndex: 0
+    isGoodEnding: 0
+    BG: {fileID: 0}
+    Character: {fileID: 0}
