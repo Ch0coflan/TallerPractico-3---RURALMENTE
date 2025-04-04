@@ -13,4 +13,14 @@ MonoBehaviour:
   m_Name: S1 - P2A
   m_EditorClassIdentifier: 
   text: s1 p2a
-  options: []
+  options:
+  - optionText: s1 p3a
+    nextPanelIndex: 3
+    isGoodEnding: 1
+    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
+    Character: {fileID: 21300000, guid: 3a4718e1d54d65541ba539aafc2a94bd, type: 3}
+  - optionText: s1 p3b
+    nextPanelIndex: 4
+    isGoodEnding: 0
+    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
+    Character: {fileID: 21300000, guid: 6ff5adfbc09058348b61de3611a3d933, type: 3}

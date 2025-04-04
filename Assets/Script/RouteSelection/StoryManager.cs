@@ -29,21 +29,13 @@ public class StoryManager : MonoBehaviour
 
     public void SetStory(int storyIndex)
     {
-        switch (storyIndex)
+        currentStory = storyIndex switch
         {
-            case 0:
-                currentStory = story1;
-                break;
-            case 1:
-                currentStory = story2;
-                break;
-            case 2:
-                currentStory = story3;
-                   break;
-            default:
-                currentStory = story1;
-                break;
-        }
+            0 => story1,
+            1 => story2,
+            2 => story3,
+            _ => story1,
+        };
         currentPanelIndex = 0;
         ShowPanel();
     }
@@ -55,34 +47,48 @@ public class StoryManager : MonoBehaviour
             Debug.Log("Fin de la historia.");
             return;
         }
+        if (currentPanelIndex < 0 || currentPanelIndex >= currentStory.Count)
+        {
+            Debug.LogWarning("Índice fuera de rango.");
+            return;
+        }
 
         PanelData currentPanel = currentStory[currentPanelIndex];
         infoText.text = currentPanel.text;
 
-        option1.gameObject.SetActive(false);
-        option2.gameObject.SetActive(false);
-
-        if (currentPanel.options.Count > 0)
+        if (currentPanel != null)
         {
-            option1.gameObject.SetActive(true);
-            option1.GetComponentInChildren<TMP_Text>().text = currentPanel.options[0].optionText;
-            option1.onClick.RemoveAllListeners();
-            option1.onClick.AddListener(() => OnOptionSelected(currentPanel.options[0]));
+            option1.gameObject.SetActive(false);
+            option2.gameObject.SetActive(false);
 
-            if(currentPanel.options.Count > 1)
+            if (currentPanel.options.Count > 0)
             {
-                option2.gameObject.SetActive(true);
-                option2.GetComponentInChildren<TMP_Text>().text = currentPanel.options[1].optionText;
-                option2.onClick.RemoveAllListeners();
-                option2.onClick.AddListener(() => OnOptionSelected(currentPanel.options[0]));
+                option1.gameObject.SetActive(true);
+                option1.GetComponentInChildren<TMP_Text>().text = currentPanel.options[0].optionText;
+                option1.onClick.RemoveAllListeners();
+                option1.onClick.AddListener(() => OnOptionSelected(currentPanel.options[0]));
+                
+                if (currentPanel.options.Count > 1)
+                {
+                    option2.gameObject.SetActive(true);
+                    option2.GetComponentInChildren<TMP_Text>().text = currentPanel.options[1].optionText;
+                    option2.onClick.RemoveAllListeners();
+                    option2.onClick.AddListener(() => OnOptionSelected(currentPanel.options[1]));
+                }
             }
-
         }
     }
-
+               
     void OnOptionSelected(PanelOption option)
     {
-        currentPanelIndex = option.nextPanelIndex; 
+        if (option.nextPanelIndex < 0 || option.nextPanelIndex >= currentStory.Count)
+        {
+            Debug.LogError("nextPanelIndex fuera de rango: " + option.nextPanelIndex);
+            return;
+        }
+        currentPanelIndex = option.nextPanelIndex;
+        BG.sprite = option.BG;
+        Character.sprite = option.Character;
         ShowPanel();  
     }
 }

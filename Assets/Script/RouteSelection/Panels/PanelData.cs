@@ -3,7 +3,7 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Panel", menuName = "Story/PanelData")]
 public class PanelData : ScriptableObject
-{
+{ 
     public string text;  
     public List<PanelOption> options;  
 }

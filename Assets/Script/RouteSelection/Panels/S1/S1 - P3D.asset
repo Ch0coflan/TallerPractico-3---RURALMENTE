@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
-  m_Name: S1 - P3A
+  m_Name: S1 - P3D
   m_EditorClassIdentifier: 
-  text: s1 p3a
+  text: s1 p3d
   options:
-  - optionText: s1 p4ae
-    nextPanelIndex: 7
-    isGoodEnding: 0
+  - optionText: s1 p4de
+    nextPanelIndex: 13
+    isGoodEnding: 1
     BG: {fileID: 0}
     Character: {fileID: 0}
-  - optionText: s1 p4ae2
-    nextPanelIndex: 8
+  - optionText: s1 p4de2
+    nextPanelIndex: 14
     isGoodEnding: 0
     BG: {fileID: 0}
     Character: {fileID: 0}

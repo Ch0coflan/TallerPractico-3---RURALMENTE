@@ -337,8 +337,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f27e724125f6b394ca8b98d2e4dd0851, type: 2}
   - {fileID: 11400000, guid: 87c11ca541284174abb604d4474f942e, type: 2}
   - {fileID: 11400000, guid: 93e38562c64a608428a60b5971658805, type: 2}
+  - {fileID: 11400000, guid: de6f4a36ddf7f644a8de4377137bf1e6, type: 2}
+  - {fileID: 11400000, guid: 8f77f7a6063a5fb488f9ae8c19f6d29e, type: 2}
   - {fileID: 11400000, guid: f03f53521325bab48bbfd7a9dbf9b83c, type: 2}
   - {fileID: 11400000, guid: ad4793c9180dc6a4fa7fe8d3924fe3b7, type: 2}
+  - {fileID: 11400000, guid: 0659e241ae324bb4b8ae8c3ec78effe5, type: 2}
+  - {fileID: 11400000, guid: 203ac9e015495c1448250563fa15ce21, type: 2}
+  - {fileID: 11400000, guid: 4ceda326434d7a94d9c6833df1e2ab45, type: 2}
+  - {fileID: 11400000, guid: 0f1d2f9df5a5e804ca2fb302f0cf950b, type: 2}
+  - {fileID: 11400000, guid: 19c23360d9c838148bd651e9fe9f21ff, type: 2}
+  - {fileID: 11400000, guid: 3b07d7383061e294a88133ca45514da2, type: 2}
   story2:
   - {fileID: 11400000, guid: 24eaef51f9a1b2c428c6bc0d905c8a0a, type: 2}
   - {fileID: 11400000, guid: 1d99af43bc5cb914e9de4945519ae2b4, type: 2}

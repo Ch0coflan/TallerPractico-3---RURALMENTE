@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
-  m_Name: S1 - P3A
+  m_Name: S3 - P4DE
   m_EditorClassIdentifier: 
-  text: s1 p3a
+  text: Este pirobo tan carero ome (lo chuza)
   options:
-  - optionText: s1 p4ae
-    nextPanelIndex: 7
-    isGoodEnding: 0
+  - optionText: perdon perdon
+    nextPanelIndex: 5
+    isGoodEnding: 1
     BG: {fileID: 0}
     Character: {fileID: 0}
-  - optionText: s1 p4ae2
-    nextPanelIndex: 8
+  - optionText: demalas piroba hpta
+    nextPanelIndex: 6
     isGoodEnding: 0
     BG: {fileID: 0}
     Character: {fileID: 0}
