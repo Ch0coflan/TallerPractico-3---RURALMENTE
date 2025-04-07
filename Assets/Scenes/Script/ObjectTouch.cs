@@ -5,38 +5,36 @@ namespace Scenes.Script
     public class ObjectTouch : MonoBehaviour
     {
         public Camera cam;
-        public GameObject infoPanel;  
 
-        private void Start()
-        {
-            infoPanel.SetActive(false); 
-        }
+        private InteractableObject _lastTouched;
 
-        private void Update()
+        void Update()
         {
             if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
             {
-                CheckObjectTouch(Input.GetTouch(0).position);
-            }
-        }
+                Vector2 touchPos = Input.GetTouch(0).position;
+                Ray ray = cam.ScreenPointToRay(touchPos);
+                RaycastHit hit;
 
-        private void CheckObjectTouch(Vector2 touchPosition)
-        {
-            Ray ray = cam.ScreenPointToRay(touchPosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit)) 
-            {
-                if (hit.collider.CompareTag($"Interactable")) 
+                if (Physics.Raycast(ray, out hit))
                 {
-                    ToggleInfoPanel();
+                    InteractableObject obj = hit.collider.GetComponent<InteractableObject>();
+                    if (obj != null)
+                    {
+                        
+                        if (_lastTouched != null && _lastTouched != obj && _lastTouched.IsActive())
+                        {
+                            _lastTouched.HideCanvas();
+                        }
+
+                        obj.ToggleCanvas();
+                        _lastTouched = obj;
+                    }
                 }
             }
         }
+        
 
-        private void ToggleInfoPanel()
-        {
-            infoPanel.SetActive(!infoPanel.activeSelf); 
-        }
+       
     }
 }

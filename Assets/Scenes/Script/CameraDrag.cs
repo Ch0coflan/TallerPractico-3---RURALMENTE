@@ -4,13 +4,15 @@ namespace Scenes.Script
 {
     public class CameraDrag : MonoBehaviour
     {
-        public Camera cam;
+        public Transform cameraTarget; 
         private Vector2 _previousTouchPos;
         private bool _isDragging = false;
 
         public float minX = -50f, maxX = 50f, minZ = -50f, maxZ = 50f;
         public float smoothSpeed = 10f; 
         public float dragSpeed = 0.01f; 
+
+        private Vector3 _currentVelocity;
 
         private void Update()
         {
@@ -27,16 +29,15 @@ namespace Scenes.Script
                 {
                     Vector2 touchDelta = touch.position - _previousTouchPos;
 
-                    Vector3 cameraMove = new Vector3(-touchDelta.x * dragSpeed, 0, -touchDelta.y * dragSpeed);
-
-                    Vector3 targetPosition = cam.transform.position + cameraMove;
+                    Vector3 move = new Vector3(-touchDelta.x * dragSpeed, 0, -touchDelta.y * dragSpeed);
+                    Vector3 targetPos = cameraTarget.position + move;
 
                     
-                    targetPosition.x = Mathf.Clamp(targetPosition.x, minX, maxX);
-                    targetPosition.z = Mathf.Clamp(targetPosition.z, minZ, maxZ);
+                    targetPos.x = Mathf.Clamp(targetPos.x, minX, maxX);
+                    targetPos.z = Mathf.Clamp(targetPos.z, minZ, maxZ);
 
-                   
-                    cam.transform.position = Vector3.Lerp(cam.transform.position, targetPosition, smoothSpeed * Time.deltaTime);
+                    
+                    cameraTarget.position = Vector3.SmoothDamp(cameraTarget.position, targetPos, ref _currentVelocity, 1f / smoothSpeed);
 
                     _previousTouchPos = touch.position;
                 }
