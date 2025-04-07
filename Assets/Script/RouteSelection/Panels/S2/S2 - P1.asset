@@ -15,8 +15,12 @@ MonoBehaviour:
   text: Sara otome es una boba hpta
   options:
   - optionText: Si
-    nextPanelIndex: 0
+    nextPanelIndex: 1
     isGoodEnding: 0
+    BG: {fileID: 0}
+    Character: {fileID: 0}
   - optionText: No
-    nextPanelIndex: 0
+    nextPanelIndex: 2
     isGoodEnding: 1
+    BG: {fileID: 0}
+    Character: {fileID: 0}

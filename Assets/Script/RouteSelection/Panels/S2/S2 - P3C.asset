@@ -10,7 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
-  m_Name: S3 - P4AE
+  m_Name: S2 - P3C
   m_EditorClassIdentifier: 
-  text: s3 p4ae
-  options: []
+  text: 's2 p3c '
+  options:
+  - optionText: s2 p4ce
+    nextPanelIndex: 11
+    isGoodEnding: 0
+    BG: {fileID: 0}
+    Character: {fileID: 0}
+  - optionText: s2 p4ce2
+    nextPanelIndex: 12
+    isGoodEnding: 0
+    BG: {fileID: 0}
+    Character: {fileID: 0}

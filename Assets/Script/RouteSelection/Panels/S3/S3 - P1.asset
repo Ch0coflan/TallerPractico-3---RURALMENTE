@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Maria Kurotsomi necesita un gramo de sople
   options:
-  - optionText: Venderselo (barato)
+  - optionText: Venderselo (barato) s3 p2a
     nextPanelIndex: 1
     isGoodEnding: 1
     BG: {fileID: 0}
     Character: {fileID: 0}
-  - optionText: Venderselo (caro)
+  - optionText: Venderselo (caro) s3 p2b
     nextPanelIndex: 2
     isGoodEnding: 0
     BG: {fileID: 0}

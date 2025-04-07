@@ -12,5 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P2A
   m_EditorClassIdentifier: 
-  text: p2a
-  options: []
+  text: s2 p2a
+  options:
+  - optionText: s2 p3a
+    nextPanelIndex: 3
+    isGoodEnding: 0
+    BG: {fileID: 0}
+    Character: {fileID: 0}
+  - optionText: s2 p3b
+    nextPanelIndex: 4
+    isGoodEnding: 0
+    BG: {fileID: 0}
+    Character: {fileID: 0}

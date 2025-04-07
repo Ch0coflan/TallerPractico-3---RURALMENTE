@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P4BE
   m_EditorClassIdentifier: 
-  text: 
+  text: s2 p4be
   options: []

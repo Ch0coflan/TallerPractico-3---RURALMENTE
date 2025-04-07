@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Este pirobo tan carero ome (lo chuza)
   options:
-  - optionText: perdon perdon
+  - optionText: perdon perdon s3 p3c
     nextPanelIndex: 5
     isGoodEnding: 1
     BG: {fileID: 0}
     Character: {fileID: 0}
-  - optionText: demalas piroba hpta
+  - optionText: demalas piroba hpta s3 p3d
     nextPanelIndex: 6
     isGoodEnding: 0
     BG: {fileID: 0}

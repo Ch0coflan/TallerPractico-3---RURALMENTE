@@ -13,14 +13,4 @@ MonoBehaviour:
   m_Name: S1 - P4BE2
   m_EditorClassIdentifier: 
   text: s1 p4be2
-  options:
-  - optionText: 
-    nextPanelIndex: 0
-    isGoodEnding: 0
-    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: 3a4718e1d54d65541ba539aafc2a94bd, type: 3}
-  - optionText: 
-    nextPanelIndex: 0
-    isGoodEnding: 0
-    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: 3a4718e1d54d65541ba539aafc2a94bd, type: 3}
+  options: []

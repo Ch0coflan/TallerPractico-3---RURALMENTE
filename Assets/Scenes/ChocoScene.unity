@@ -353,12 +353,32 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 86ff344d81bce214d97e951ca5b8ab9d, type: 2}
   - {fileID: 11400000, guid: f77abbe9a8cd21d4284482bca0b9a964, type: 2}
   - {fileID: 11400000, guid: 98abb2b32fdf71c4199b9eb74c0df616, type: 2}
+  - {fileID: 11400000, guid: cec5cb01dd3cf0046ac74a98de5f091b, type: 2}
+  - {fileID: 11400000, guid: 9ef1a1032522f5842b0e6815995bf70e, type: 2}
   - {fileID: 11400000, guid: d8329b025b8114843896f6021bfafebd, type: 2}
+  - {fileID: 11400000, guid: adc259cf3b819214c870d82ca1cb5416, type: 2}
   - {fileID: 11400000, guid: 3faf69c3b3815fc4dba2e2c72edc5575, type: 2}
+  - {fileID: 11400000, guid: 1e6a160cf98c7c74fb97e582461d8fb4, type: 2}
+  - {fileID: 11400000, guid: e850fc04b1b44cd4fa8978a6900fb94f, type: 2}
+  - {fileID: 11400000, guid: cbab9a7e0be466c42bdab3d1480a207e, type: 2}
+  - {fileID: 11400000, guid: 0f1cc2c51c64ec04a8951de1946613f8, type: 2}
+  - {fileID: 11400000, guid: 283a8e2da25f9034cadf30574157d903, type: 2}
   story3:
   - {fileID: 11400000, guid: 73e57334712b17147a7060afb7bb2d75, type: 2}
   - {fileID: 11400000, guid: ca6ffe1bab25b604da1010c14add573d, type: 2}
   - {fileID: 11400000, guid: 5cdf21ed723de5341a37f272089fedf1, type: 2}
+  - {fileID: 11400000, guid: e4780cc87a316a04aad642f93ffe26a3, type: 2}
+  - {fileID: 11400000, guid: 86af9c7b46e30014fa848984e7d46456, type: 2}
+  - {fileID: 11400000, guid: 3bf46d399abe0304da2172ebc04d6256, type: 2}
+  - {fileID: 11400000, guid: 6335e570dc22bb041a2085527adf3ff9, type: 2}
+  - {fileID: 11400000, guid: eb72c76175225454094c85446500794d, type: 2}
+  - {fileID: 11400000, guid: da8a0155e78b99f4f9ccd5d2fddbc836, type: 2}
+  - {fileID: 11400000, guid: ba2296ac4308cd44f87845db0a9f6717, type: 2}
+  - {fileID: 11400000, guid: 6c229abbb8acbee4ea3ac1f1de7828d2, type: 2}
+  - {fileID: 11400000, guid: 5c7b101431ce2004bb2c0a03e1e66c1e, type: 2}
+  - {fileID: 11400000, guid: 118b362392ead694ca83cb6a8ccd53fe, type: 2}
+  - {fileID: 11400000, guid: 8d9dbec4d097bde4fa0b498356efc4cb, type: 2}
+  - {fileID: 11400000, guid: 358c69838110be94b9c9b0523b770ee6, type: 2}
   infoText: {fileID: 1742746710}
   option1: {fileID: 2031784123}
   option2: {fileID: 2130510341}

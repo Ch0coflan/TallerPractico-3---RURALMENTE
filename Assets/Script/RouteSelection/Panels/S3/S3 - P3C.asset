@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S3 - P3C
   m_EditorClassIdentifier: 
-  text: Este pirobo tan carero ome (lo chuza)
+  text: s3 p3c
   options:
-  - optionText: perdon perdon
-    nextPanelIndex: 5
+  - optionText: s3 p4ce
+    nextPanelIndex: 11
     isGoodEnding: 1
     BG: {fileID: 0}
     Character: {fileID: 0}
-  - optionText: demalas piroba hpta
-    nextPanelIndex: 6
+  - optionText: s3 p4ce2
+    nextPanelIndex: 12
     isGoodEnding: 0
     BG: {fileID: 0}
     Character: {fileID: 0}

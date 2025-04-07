@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Muchas gracias! Vos sos el dealer mas confiable
   options:
-  - optionText: Con mucho gusto
+  - optionText: Con mucho gusto s3 p3a
     nextPanelIndex: 3
     isGoodEnding: 1
     BG: {fileID: 0}
     Character: {fileID: 0}
-  - optionText: Ese descuento no fue de gratis
+  - optionText: Ese descuento no fue de gratis s3 p3b
     nextPanelIndex: 4
     isGoodEnding: 0
     BG: {fileID: 0}
