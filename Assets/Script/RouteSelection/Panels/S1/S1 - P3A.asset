@@ -17,8 +17,8 @@ MonoBehaviour:
   - optionText: s1 p4ae
     nextPanelIndex: 7
     isGoodEnding: 0
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
+    Character: {fileID: 21300000, guid: 3a4718e1d54d65541ba539aafc2a94bd, type: 3}
   - optionText: s1 p4ae2
     nextPanelIndex: 8
     isGoodEnding: 0
