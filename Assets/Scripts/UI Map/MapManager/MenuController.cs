@@ -1,0 +1,133 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using Managers;
+
+namespace Menu
+{
+    public class MenuController : MonoBehaviour
+    {
+        public MenuModel model;
+        public MenuView view;
+
+        private void Start()
+        {
+            Debug.Log("✅ MenuController Start() ejecutándose...");
+            AssignButtonEvents();
+
+            // Asegurarse de que el cursor está visible y desbloqueado en el menú
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+
+
+        private void AssignButtonEvents()
+        {
+            Debug.Log("🔄 Asignando eventos a los botones...");
+
+            // Menú principal
+            AssignButton(view.playButton, () => LoadScene(1));
+            AssignButton(view.settingsButton, () => SwitchPanel(model.mainPanel, model.settingsPanel));
+            AssignButton(view.creditsButton, () => SwitchPanel(model.mainPanel, model.creditsPanel)); // Verifica esta línea
+            AssignButton(view.exitButton, Application.Quit);
+            AssignButton(view.settingsBackButton, () => SwitchPanel(model.settingsPanel, model.mainPanel));
+            AssignButton(view.creditsBackButton, () => SwitchPanel(model.creditsPanel, model.mainPanel));
+
+            // Menú de pausa y Game Over
+            AssignButton(view.restartButton, RestartGame);
+            AssignButton(view.continueButton, () => HandleGameManager(() => GameManager.Instance.TogglePause(false)));
+            AssignButton(view.gameOverRestartButton, RestartGame);
+            AssignButton(view.mainMenuButton, ReturnToMainMenu);
+            AssignButton(view.gameOverMainMenuButton, ReturnToMainMenu);
+        }
+
+        // Método genérico para asignar eventos a botones
+        private void AssignButton(Button button, UnityEngine.Events.UnityAction action)
+        {
+            if (button != null)
+            {
+                button.onClick.RemoveAllListeners(); // Limpiar eventos previos
+                button.onClick.AddListener(action);
+                Debug.Log($"✅ Evento asignado a {button.name}");
+            }
+            else
+            {
+                Debug.LogWarning("⚠️ Un botón no está asignado en el Inspector.");
+            }
+        }
+
+        // Cambiar entre paneles
+        private void SwitchPanel(GameObject current, GameObject next)
+        {
+            if (current != null && next != null)
+            {
+                current.SetActive(false);
+                next.SetActive(true);
+                Debug.Log($"🔄 Cambiando panel de {current.name} a {next.name}");
+            }
+            else
+            {
+                Debug.LogWarning("⚠️ Panel references are missing!");
+            }
+        }
+
+        // Cargar una escena
+        private void LoadScene(int sceneIndex)
+        {
+            Debug.Log($"📂 Cargando escena {sceneIndex}...");
+            HandleGameManager(() => GameManager.Instance.TogglePause(false));
+            SceneManager.LoadScene(sceneIndex);
+        }
+
+        // Reiniciar el juego
+        private void RestartGame()
+        {
+            Debug.Log("🔄 Reiniciando el juego...");
+            HandleGameManager(() =>
+            {
+                GameManager.Instance.TogglePause(false);
+                SceneManager.LoadScene(1);
+            });
+        }
+
+        // Regresar al menú principal
+        private void ReturnToMainMenu()
+        {
+            Debug.Log("🏠 Regresando al menú principal...");
+
+            // Asegurar que el panel de pausa está desactivado antes de cambiar de escena
+            if (model.pausePanel != null)
+            {
+                model.pausePanel.SetActive(false);
+                model.gameOverPanel.SetActive(false);
+                
+                Debug.Log("⏸️ Panel de pausa desactivado.");
+            }
+
+            HandleGameManager(() =>
+            {
+                Time.timeScale = 1; // Restablecer el tiempo
+                Cursor.visible = true; // Asegurar que el cursor es visible
+                Cursor.lockState = CursorLockMode.None; // Desbloquear el cursor
+                SceneManager.LoadScene(0); // Cargar la escena del menú principal
+            });
+        }
+
+
+
+
+        // Método auxiliar para manejar el GameManager de manera segura
+        private void HandleGameManager(System.Action action)
+        {
+            if (GameManager.Instance != null)
+            {
+                Debug.Log("✅ GameManager detectado correctamente.");
+                action?.Invoke();
+            }
+            else
+            {
+                Debug.LogWarning("⚠️ GameManager.Instance es null. Asegúrate de que está en la escena.");
+            }
+        }
+    }
+}
