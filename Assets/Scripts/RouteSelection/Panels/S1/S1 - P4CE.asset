@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P4CE
   m_EditorClassIdentifier: 
-  text: s1 p4ce
+  text: "Como decir \"me siento cansado\" o  \"me siento triste\"?... Voy a pensar
+    en eso, quiz\xE1s no estoy tan solo como cre\xEDa."
   options: []

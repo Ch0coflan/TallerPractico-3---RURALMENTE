@@ -13,7 +13,6 @@ public class PanelOption
 {
     public string optionText;  
     public int nextPanelIndex;  
-    public bool isGoodEnding;
     public Sprite BG;
     public Sprite Character;
 }

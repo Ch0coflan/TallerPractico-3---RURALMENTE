@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P4BE
   m_EditorClassIdentifier: 
-  text: s1 p4be
+  text: "Ahora lo entiendo todo... A veces uno piensa que solo esta cansado, pero
+    no es solo eso, uno aguanta hasta que no puede mas. Gracias por escucharme, de
+    verdad. Aprend\xED que esto tambi\xE9n hace parte de curarse."
   options: []

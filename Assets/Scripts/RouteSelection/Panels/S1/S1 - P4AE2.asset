@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P4AE2
   m_EditorClassIdentifier: 
-  text: s1 p4ae2
+  text: "Si, tiene raz\xF3n en lo que me ha dicho. Muchas gracias por su tiempo, 
+    empezare a descansar mas seguido. Seguro que con eso me compongo."
   options: []
