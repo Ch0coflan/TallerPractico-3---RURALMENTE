@@ -15,3 +15,4 @@ MonoBehaviour:
   text: "Si, tiene raz\xF3n en lo que me ha dicho. Muchas gracias por su tiempo, 
     empezare a descansar mas seguido. Seguro que con eso me compongo."
   options: []
+  isEndPanel: 1

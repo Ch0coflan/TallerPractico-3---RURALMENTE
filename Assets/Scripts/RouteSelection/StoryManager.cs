@@ -1,11 +1,12 @@
-using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class StoryManager : MonoBehaviour
 {
+    public UnityEvent onEndedStory;
     public List<PanelData> story1 = new List<PanelData>();
     public List<PanelData> story2 = new List<PanelData>();
     public List<PanelData> story3 = new List<PanelData>();
@@ -13,6 +14,7 @@ public class StoryManager : MonoBehaviour
     public TMP_Text infoText;
     public Button option1;
     public Button option2;
+    public Button returnButton;
     public Image BG;
     public Image Character;
     public Transform optionContainer; 
@@ -25,6 +27,7 @@ public class StoryManager : MonoBehaviour
     {
         currentStory = story1;
         ShowPanel();
+        returnButton.gameObject.SetActive(false);
     }
 
     public void SetStory(int storyIndex)
@@ -52,7 +55,6 @@ public class StoryManager : MonoBehaviour
             Debug.LogWarning("Índice fuera de rango.");
             return;
         }
-
         PanelData currentPanel = currentStory[currentPanelIndex];
         infoText.text = currentPanel.text;
 
@@ -76,6 +78,13 @@ public class StoryManager : MonoBehaviour
                     option2.onClick.AddListener(() => OnOptionSelected(currentPanel.options[1]));
                 }
             }
+
+            if(currentPanel.isEndPanel)
+            {
+                option1.gameObject.SetActive(false);
+                option2.gameObject.SetActive(false);
+                returnButton.gameObject.SetActive(true);
+            }
         }
     }
                
@@ -90,5 +99,11 @@ public class StoryManager : MonoBehaviour
         BG.sprite = option.BG;
         Character.sprite = option.Character;
         ShowPanel();  
+    }
+
+    public void ReturnToMenu()
+    {
+        onEndedStory?.Invoke();
+        returnButton.gameObject.SetActive(false);
     }
 }

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: s3 p4de
   options: []
+  isEndPanel: 1

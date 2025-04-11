@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: "Si... Seguramente. A uno le toca aguantarse, no?  As\xED es como toca..."
   options: []
+  isEndPanel: 1

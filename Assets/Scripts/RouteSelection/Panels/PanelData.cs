@@ -5,13 +5,14 @@ using UnityEngine;
 public class PanelData : ScriptableObject
 { 
     public string text;  
-    public List<PanelOption> options;  
+    public List<PanelOption> options;
+    public bool isEndPanel;
 }
 
 [System.Serializable]
 public class PanelOption
 {
-    public string optionText;  
+    public string optionText;
     public int nextPanelIndex;  
     public Sprite BG;
     public Sprite Character;

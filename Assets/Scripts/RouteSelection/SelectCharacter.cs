@@ -28,6 +28,13 @@ public class SelectCharacter : MonoBehaviour
             onSelectCharacter?.Invoke();
         }
     }
+
+    public void OnEndedStory()
+    {
+        homePanel.SetActive(true);
+        routePanel.SetActive(false);
+        charImage.color = Color.gray;
+    }
 }
 
     
