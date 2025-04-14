@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class StoryManager : MonoBehaviour
 {
-    public UnityEvent onEndedStory;
+    public UnityEvent onEndedFirstStory;
+    public UnityEvent onEndedSecondStory;
+    public UnityEvent onEndedThirdStory;
     public List<PanelData> story1 = new List<PanelData>();
     public List<PanelData> story2 = new List<PanelData>();
     public List<PanelData> story3 = new List<PanelData>();
@@ -101,9 +103,21 @@ public class StoryManager : MonoBehaviour
         ShowPanel();  
     }
 
-    public void ReturnToMenu()
+    public void ReturnToMenu1()
     {
-        onEndedStory?.Invoke();
+        onEndedFirstStory?.Invoke();
+        returnButton.gameObject.SetActive(false);
+    }
+
+    public void ReturnToMenu2()
+    {
+        onEndedSecondStory?.Invoke();
+        returnButton.gameObject.SetActive(false);
+    }
+
+    public void ReturnToMenu3()
+    {
+        onEndedThirdStory?.Invoke();
         returnButton.gameObject.SetActive(false);
     }
 }

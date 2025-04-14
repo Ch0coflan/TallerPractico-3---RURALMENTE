@@ -10,6 +10,7 @@ public class SelectCharacter : MonoBehaviour
     public Image charImage;
     public GameObject homePanel;
     public GameObject routePanel;
+    [SerializeField] private bool isRouteCompleted = false;
 
 
     private void Awake()
@@ -31,9 +32,13 @@ public class SelectCharacter : MonoBehaviour
 
     public void OnEndedStory()
     {
+        isRouteCompleted = true;
         homePanel.SetActive(true);
         routePanel.SetActive(false);
-        charImage.color = Color.gray;
+        if (isRouteCompleted)
+        {
+            charImage.color = Color.gray;
+        }
     }
 }
 
