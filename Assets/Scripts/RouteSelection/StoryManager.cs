@@ -12,6 +12,7 @@ public class StoryManager : MonoBehaviour
     public List<PanelData> story1 = new List<PanelData>();
     public List<PanelData> story2 = new List<PanelData>();
     public List<PanelData> story3 = new List<PanelData>();
+    [SerializeField] private int _storyID;
     [Header("PanelData")]
     public TMP_Text infoText;
     public Button option1;
@@ -42,6 +43,7 @@ public class StoryManager : MonoBehaviour
             _ => story1,
         };
         currentPanelIndex = 0;
+        _storyID = storyIndex;
         ShowPanel();
     }
 
@@ -103,6 +105,16 @@ public class StoryManager : MonoBehaviour
         ShowPanel();  
     }
 
+    public void FinishedStory()
+    {
+        switch (_storyID)
+        {
+            case 0: ReturnToMenu1(); break;
+            case 1: ReturnToMenu2(); break;
+            case 2: ReturnToMenu3(); break;
+        }
+    }
+        
     public void ReturnToMenu1()
     {
         onEndedFirstStory?.Invoke();

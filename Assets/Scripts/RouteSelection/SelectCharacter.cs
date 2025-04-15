@@ -1,13 +1,15 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class SelectCharacter : MonoBehaviour
 {
     public UnityEvent onSelectCharacter;
-    public int storyIndex;
+    public EventTrigger EventTrigger;
     public Image charImage;
+    public Outline outline;
     public GameObject homePanel;
     public GameObject routePanel;
     [SerializeField] private bool isRouteCompleted = false;
@@ -16,10 +18,12 @@ public class SelectCharacter : MonoBehaviour
     private void Awake()
     {
         charImage = GetComponent<Image>();
+        outline = GetComponent<Outline>();
+        EventTrigger = GetComponent<EventTrigger>();
         homePanel.SetActive(true);
         routePanel.SetActive(false);
     }
-
+       
     public void OnClickedChar()
     {
         if (charImage != null)
@@ -35,6 +39,8 @@ public class SelectCharacter : MonoBehaviour
         isRouteCompleted = true;
         homePanel.SetActive(true);
         routePanel.SetActive(false);
+        outline.enabled = false;
+        EventTrigger.enabled = false;
         if (isRouteCompleted)
         {
             charImage.color = Color.gray;
