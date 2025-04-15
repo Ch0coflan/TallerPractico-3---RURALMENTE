@@ -118,18 +118,21 @@ public class StoryManager : MonoBehaviour
     public void ReturnToMenu1()
     {
         onEndedFirstStory?.Invoke();
+        LoopManager.instance.SetStoryAsCompleted(_storyID);
         returnButton.gameObject.SetActive(false);
     }
 
     public void ReturnToMenu2()
     {
         onEndedSecondStory?.Invoke();
+        LoopManager.instance.SetStoryAsCompleted(_storyID);
         returnButton.gameObject.SetActive(false);
     }
 
     public void ReturnToMenu3()
     {
         onEndedThirdStory?.Invoke();
+        LoopManager.instance.SetStoryAsCompleted(_storyID);
         returnButton.gameObject.SetActive(false);
     }
 }

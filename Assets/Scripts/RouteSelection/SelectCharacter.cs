@@ -23,28 +23,46 @@ public class SelectCharacter : MonoBehaviour
         homePanel.SetActive(true);
         routePanel.SetActive(false);
     }
-       
+
+    private void Settings()
+    {
+        isRouteCompleted = false;
+        EventTrigger.enabled = true;
+        charImage.color = Color.white;
+    }
+
     public void OnClickedChar()
     {
-        if (charImage != null)
+        if (isRouteCompleted == false)
         {
-            homePanel.SetActive(false);
-            routePanel.SetActive(true);
-            onSelectCharacter?.Invoke();
+            if (charImage != null)
+            {
+                homePanel.SetActive(false);
+                routePanel.SetActive(true);
+                onSelectCharacter?.Invoke();
+            }
         }
     }
 
     public void OnEndedStory()
     {
         isRouteCompleted = true;
-        homePanel.SetActive(true);
-        routePanel.SetActive(false);
-        outline.enabled = false;
-        EventTrigger.enabled = false;
+        
         if (isRouteCompleted)
         {
+            Debug.Log("Historia Finalizada y marcada como completada");
+            homePanel.SetActive(true);
+            routePanel.SetActive(false);
+            outline.enabled = false;
+            EventTrigger.enabled = false;
             charImage.color = Color.gray;
         }
+    }
+
+    public void OnRestartStory()
+    {
+       Settings();
+        Debug.Log("Historia Reiniciada");
     }
 }
 
