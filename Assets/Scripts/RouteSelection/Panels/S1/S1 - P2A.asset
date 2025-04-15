@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P2A
   m_EditorClassIdentifier: 
-  text: s1 p2a
+  text: "No se cuando empez\xF3, pero me doy cuenta de que todo me  pone irritable.
+    Los ni\xF1os, el ruido, los vecinos... Me da pena decirlo, pero hay d\xEDas en
+    los que quiero salir corriendo de la finca."
   options:
-  - optionText: s1 p3a
+  - optionText: "Sentirse sobrecargado no lo hace una mala persona. Quiere que exploremos
+      por que se siente as\xED?"
     nextPanelIndex: 3
-    isGoodEnding: 1
     BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
     Character: {fileID: 21300000, guid: 3a4718e1d54d65541ba539aafc2a94bd, type: 3}
-  - optionText: s1 p3b
+  - optionText: Tal vez solo necesita descansar mas. A veces el cuerpo pide pausa.
     nextPanelIndex: 4
-    isGoodEnding: 0
     BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
     Character: {fileID: 21300000, guid: 6ff5adfbc09058348b61de3611a3d933, type: 3}

@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P4CE2
   m_EditorClassIdentifier: 
-  text: s1 p4ce2
+  text: Nunca he sido bueno para hablar de lo que siento... Menos con alguien desconocido...
+    Si usted me ayuda, lo puedo intentar.
   options: []
+  isEndPanel: 1
