@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P3A
   m_EditorClassIdentifier: 
-  text: s1 p3a
+  text: "A veces pienso en dejar  todo tirado e irme lejos. Pero, a donde? Esta es
+    la vida que conozco, y aunque no quiero seguir as\xED, tampoco se que hacer."
   options:
-  - optionText: s1 p4ae
+  - optionText: Buscar ayuda no significa abandonar todo. Es el primer paso para
+      recuperar el control.
     nextPanelIndex: 7
-    isGoodEnding: 0
     BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
     Character: {fileID: 21300000, guid: 3a4718e1d54d65541ba539aafc2a94bd, type: 3}
-  - optionText: s1 p4ae2
+  - optionText: Podemos intentar distraernos para que no piense tanto en eso.
     nextPanelIndex: 8
-    isGoodEnding: 0
     BG: {fileID: 0}
     Character: {fileID: 0}

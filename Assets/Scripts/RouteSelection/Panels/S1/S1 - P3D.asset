@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P3D
   m_EditorClassIdentifier: 
-  text: s1 p3d
+  text: "Me da miedo que si hablo de esto me vean como un loco. Aqu\xED la gente
+    no cree tanto en estas cosas. Si se  dan cuenta que vine a hablar con usted,
+    seguro se burlan."
   options:
-  - optionText: s1 p4de
+  - optionText: Seria muy valiente de su parte.  Otros pueden encontrar valor en
+      su testimonio.
     nextPanelIndex: 13
-    isGoodEnding: 1
     BG: {fileID: 0}
     Character: {fileID: 0}
-  - optionText: s1 p4de2
+  - optionText: Buscar ayuda no es  locura, es coraje. Ojala mas personas pudieran
+      hacer lo que usted hace.
     nextPanelIndex: 14
-    isGoodEnding: 0
     BG: {fileID: 0}
     Character: {fileID: 0}

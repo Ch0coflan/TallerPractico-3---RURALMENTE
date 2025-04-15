@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P3C
   m_EditorClassIdentifier: 
-  text: s1 p3c
+  text: "Mi se\xF1ora me dice que estoy cambiado, que ya no sonr\xEDo y que estoy
+    muy  callado, pero no se que  decirle... Como le explico algo que ni siquiera
+    yo entiendo?"
   options:
-  - optionText: s1 p4ce
+  - optionText: "A veces, ponerle nombre a lo que uno siente ayuda a que los dem\xE1s
+      tambi\xE9n lo entiendan."
     nextPanelIndex: 11
-    isGoodEnding: 1
     BG: {fileID: 0}
     Character: {fileID: 0}
-  - optionText: s1 p4ce2
+  - optionText: Podemos buscar palabras para eso que le pasa. No tiene que hacerlo
+      solo.
     nextPanelIndex: 12
-    isGoodEnding: 0
     BG: {fileID: 0}
     Character: {fileID: 0}
