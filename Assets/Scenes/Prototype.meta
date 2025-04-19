@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Prototype.meta
 guid: 3e7c1a0db1a9d0944b04789073238992
+========
+guid: e9154c44c2c0bb843aa2f49689dbcc46
+>>>>>>>> Miguel:Assets/Shaders.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P2B
   m_EditorClassIdentifier: 
-  text: s1 p2b
+  text: "En la finca el trabajo es interminable y no hay espacio para el descanso.
+    A veces paso d\xEDas trabajando sin parar y, si me detengo, la comida no llega
+    a la mesa de mi casa."
   options:
-  - optionText: s1 p3c
+  - optionText: "Vivir as\xED constantemente desgasta mucho. Ha pensado en como podr\xEDa
+      darle un respiro a su cuerpo y mente?"
     nextPanelIndex: 5
-    isGoodEnding: 1
     BG: {fileID: 0}
     Character: {fileID: 0}
-  - optionText: s1 p3d
+  - optionText: "Ese ritmo puede parecer normal en el campo, pero no es saludable.
+      Cuidarse y descansar tambi\xE9n hace parte del trabajo."
     nextPanelIndex: 6
-    isGoodEnding: 0
     BG: {fileID: 0}
     Character: {fileID: 0}
