@@ -9,6 +9,7 @@ public class StoryManager : MonoBehaviour
     public UnityEvent onEndedFirstStory;
     public UnityEvent onEndedSecondStory;
     public UnityEvent onEndedThirdStory;
+    public UnityEvent onExitButton;
     public List<PanelData> story1 = new List<PanelData>();
     public List<PanelData> story2 = new List<PanelData>();
     public List<PanelData> story3 = new List<PanelData>();
@@ -134,5 +135,12 @@ public class StoryManager : MonoBehaviour
         onEndedThirdStory?.Invoke();
         LoopManager.instance.SetStoryAsCompleted(_storyID);
         returnButton.gameObject.SetActive(false);
+    }
+
+    public void ReturnToMenuExit()
+    {
+        onExitButton?.Invoke();
+        currentPanelIndex = 0;
+        currentStory = null;   
     }
 }

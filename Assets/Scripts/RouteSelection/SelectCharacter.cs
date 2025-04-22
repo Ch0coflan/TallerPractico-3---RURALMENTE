@@ -64,6 +64,12 @@ public class SelectCharacter : MonoBehaviour
        Settings();
         Debug.Log("Historia Reiniciada");
     }
+
+    public void OnExitButton()
+    {
+        routePanel.SetActive(false);
+        homePanel.SetActive(true);
+    }
 }
 
     

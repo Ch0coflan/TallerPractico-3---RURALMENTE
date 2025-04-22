@@ -12,15 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P1
   m_EditorClassIdentifier: 
-  text: Sara otome es una boba hpta
+  text: p1
   options:
   - optionText: Si
     nextPanelIndex: 1
-    isGoodEnding: 0
     BG: {fileID: 0}
     Character: {fileID: 0}
   - optionText: No
     nextPanelIndex: 2
-    isGoodEnding: 1
     BG: {fileID: 0}
     Character: {fileID: 0}
+  isEndPanel: 0
