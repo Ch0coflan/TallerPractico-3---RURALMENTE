@@ -17,9 +17,9 @@ MonoBehaviour:
   - optionText: Si
     nextPanelIndex: 1
     BG: {fileID: 0}
-    Character: {fileID: 0}
+    Character: {fileID: 21300000, guid: bb70c36f3f4a78245a14c65befd0565c, type: 3}
   - optionText: No
     nextPanelIndex: 2
     BG: {fileID: 0}
-    Character: {fileID: 0}
+    Character: {fileID: 21300000, guid: bb70c36f3f4a78245a14c65befd0565c, type: 3}
   isEndPanel: 0

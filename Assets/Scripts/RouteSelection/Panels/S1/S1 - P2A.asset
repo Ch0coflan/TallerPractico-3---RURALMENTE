@@ -20,8 +20,9 @@ MonoBehaviour:
       por que se siente as\xED?"
     nextPanelIndex: 3
     BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: 3a4718e1d54d65541ba539aafc2a94bd, type: 3}
+    Character: {fileID: 21300000, guid: 40a1ca6d2316b4740ab8899b9294b3a7, type: 3}
   - optionText: Tal vez solo necesita descansar mas. A veces el cuerpo pide pausa.
     nextPanelIndex: 4
     BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: 6ff5adfbc09058348b61de3611a3d933, type: 3}
+    Character: {fileID: 21300000, guid: 40a1ca6d2316b4740ab8899b9294b3a7, type: 3}
+  isEndPanel: 0
