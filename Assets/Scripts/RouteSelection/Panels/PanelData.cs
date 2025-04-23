@@ -13,6 +13,7 @@ public class PanelData : ScriptableObject
 public class PanelOption
 {
     public string optionText;
+    public bool isGoodDecision; 
     public int nextPanelIndex;  
     public Sprite BG;
     public Sprite Character;
