@@ -18,11 +18,14 @@ MonoBehaviour:
   options:
   - optionText: "Vivir as\xED constantemente desgasta mucho. Ha pensado en como podr\xEDa
       darle un respiro a su cuerpo y mente?"
+    isGoodDecision: 0
     nextPanelIndex: 5
     BG: {fileID: 0}
     Character: {fileID: 0}
   - optionText: "Ese ritmo puede parecer normal en el campo, pero no es saludable.
       Cuidarse y descansar tambi\xE9n hace parte del trabajo."
+    isGoodDecision: 1
     nextPanelIndex: 6
     BG: {fileID: 0}
     Character: {fileID: 0}
+  isEndPanel: 0

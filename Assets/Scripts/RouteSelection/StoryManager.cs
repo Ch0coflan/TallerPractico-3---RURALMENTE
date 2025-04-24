@@ -9,6 +9,7 @@ public class StoryManager : MonoBehaviour
     public UnityEvent onEndedFirstStory;
     public UnityEvent onEndedSecondStory;
     public UnityEvent onEndedThirdStory;
+    public UnityEvent onExitButton;
     public List<PanelData> story1 = new List<PanelData>();
     public List<PanelData> story2 = new List<PanelData>();
     public List<PanelData> story3 = new List<PanelData>();
@@ -22,6 +23,7 @@ public class StoryManager : MonoBehaviour
     public Image Character;
     public Transform optionContainer; 
     //public AudioSource characterAudioSource;
+    //public Animator animator;
 
     private List<PanelData> currentStory;
     private int currentPanelIndex = 0;  
@@ -56,7 +58,7 @@ public class StoryManager : MonoBehaviour
         }
         if (currentPanelIndex < 0 || currentPanelIndex >= currentStory.Count)
         {
-            Debug.LogWarning("Índice fuera de rango.");
+            Debug.LogWarning("ï¿½ndice fuera de rango.");
             return;
         }
         PanelData currentPanel = currentStory[currentPanelIndex];
@@ -99,6 +101,7 @@ public class StoryManager : MonoBehaviour
             Debug.LogError("nextPanelIndex fuera de rango: " + option.nextPanelIndex);
             return;
         }
+        DecisionTracker.Instance.TrackDecision(option.isGoodDecision);
         currentPanelIndex = option.nextPanelIndex;
         BG.sprite = option.BG;
         Character.sprite = option.Character;
@@ -134,5 +137,12 @@ public class StoryManager : MonoBehaviour
         onEndedThirdStory?.Invoke();
         LoopManager.instance.SetStoryAsCompleted(_storyID);
         returnButton.gameObject.SetActive(false);
+    }
+
+    public void ReturnToMenuExit()
+    {
+        onExitButton?.Invoke();
+        currentPanelIndex = 0;
+        currentStory = null;   
     }
 }

@@ -12,15 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S3 - P2A
   m_EditorClassIdentifier: 
-  text: Muchas gracias! Vos sos el dealer mas confiable
+  text: p2a
   options:
-  - optionText: Con mucho gusto s3 p3a
+  - optionText: s3 p3a
     nextPanelIndex: 3
-    isGoodEnding: 1
     BG: {fileID: 0}
     Character: {fileID: 0}
-  - optionText: Ese descuento no fue de gratis s3 p3b
+  - optionText: s3 p3b
     nextPanelIndex: 4
-    isGoodEnding: 0
     BG: {fileID: 0}
     Character: {fileID: 0}
+  isEndPanel: 0
