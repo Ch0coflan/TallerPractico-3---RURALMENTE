@@ -23,10 +23,11 @@ namespace Menu
 
         private void AssignButtonEvents()
         {
+            int sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             Debug.Log("Asignando eventos a los botones...");
 
             // Menú principal
-            AssignButton(view.playButton, () => LoadScene(1));
+            AssignButton(view.playButton, () => LoadScene(sceneIndex));
             AssignButton(view.settingsButton, () => SwitchPanel(model.mainPanel, model.settingsPanel));
             AssignButton(view.creditsButton, () => SwitchPanel(model.mainPanel, model.creditsPanel)); // Verifica esta línea
             AssignButton(view.exitButton, Application.Quit);
