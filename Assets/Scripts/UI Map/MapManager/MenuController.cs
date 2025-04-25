@@ -12,7 +12,7 @@ namespace Menu
 
         private void Start()
         {
-            Debug.Log("✅ MenuController Start() ejecutándose...");
+            Debug.Log("MenuController Start() ejecutándose...");
             AssignButtonEvents();
 
             // Asegurarse de que el cursor está visible y desbloqueado en el menú
@@ -23,7 +23,7 @@ namespace Menu
 
         private void AssignButtonEvents()
         {
-            Debug.Log("🔄 Asignando eventos a los botones...");
+            Debug.Log("Asignando eventos a los botones...");
 
             // Menú principal
             AssignButton(view.playButton, () => LoadScene(1));
@@ -48,11 +48,11 @@ namespace Menu
             {
                 button.onClick.RemoveAllListeners(); // Limpiar eventos previos
                 button.onClick.AddListener(action);
-                Debug.Log($"✅ Evento asignado a {button.name}");
+                Debug.Log($"Evento asignado a {button.name}");
             }
             else
             {
-                Debug.LogWarning("⚠️ Un botón no está asignado en el Inspector.");
+                Debug.LogWarning("Un botón no está asignado en el Inspector.");
             }
         }
 
@@ -63,18 +63,18 @@ namespace Menu
             {
                 current.SetActive(false);
                 next.SetActive(true);
-                Debug.Log($"🔄 Cambiando panel de {current.name} a {next.name}");
+                Debug.Log($"Cambiando panel de {current.name} a {next.name}");
             }
             else
             {
-                Debug.LogWarning("⚠️ Panel references are missing!");
+                Debug.LogWarning("Panel references are missing!");
             }
         }
 
         // Cargar una escena
         private void LoadScene(int sceneIndex)
         {
-            Debug.Log($"📂 Cargando escena {sceneIndex}...");
+            Debug.Log($"Cargando escena {sceneIndex}...");
             HandleGameManager(() => GameManager.Instance.TogglePause(false));
             SceneManager.LoadScene(sceneIndex);
         }
@@ -82,7 +82,7 @@ namespace Menu
         // Reiniciar el juego
         private void RestartGame()
         {
-            Debug.Log("🔄 Reiniciando el juego...");
+            Debug.Log("Reiniciando el juego...");
             HandleGameManager(() =>
             {
                 GameManager.Instance.TogglePause(false);
@@ -93,7 +93,7 @@ namespace Menu
         // Regresar al menú principal
         private void ReturnToMainMenu()
         {
-            Debug.Log("🏠 Regresando al menú principal...");
+            Debug.Log("Regresando al menú principal...");
 
             // Asegurar que el panel de pausa está desactivado antes de cambiar de escena
             if (model.pausePanel != null)
@@ -101,7 +101,7 @@ namespace Menu
                 model.pausePanel.SetActive(false);
                 model.gameOverPanel.SetActive(false);
                 
-                Debug.Log("⏸️ Panel de pausa desactivado.");
+                Debug.Log("Panel de pausa desactivado.");
             }
 
             HandleGameManager(() =>
@@ -121,12 +121,12 @@ namespace Menu
         {
             if (GameManager.Instance != null)
             {
-                Debug.Log("✅ GameManager detectado correctamente.");
+                Debug.Log("GameManager detectado correctamente.");
                 action?.Invoke();
             }
             else
             {
-                Debug.LogWarning("⚠️ GameManager.Instance es null. Asegúrate de que está en la escena.");
+                Debug.LogWarning("GameManager.Instance es null. Asegúrate de que está en la escena.");
             }
         }
     }
