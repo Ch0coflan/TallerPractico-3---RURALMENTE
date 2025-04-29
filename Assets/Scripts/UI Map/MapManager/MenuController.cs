@@ -36,7 +36,7 @@ namespace Menu
 
             // Menú de pausa y Game Over
             AssignButton(view.restartButton, RestartGame);
-            AssignButton(view.continueButton, () => HandleGameManager(() => GameManager.Instance.TogglePause(false)));
+            AssignButton(view.continueButton, () => {});
             AssignButton(view.gameOverRestartButton, RestartGame);
             AssignButton(view.mainMenuButton, ReturnToMainMenu);
             AssignButton(view.gameOverMainMenuButton, ReturnToMainMenu);
@@ -76,7 +76,6 @@ namespace Menu
         private void LoadScene(int sceneIndex)
         {
             Debug.Log($"Cargando escena {sceneIndex}...");
-            HandleGameManager(() => GameManager.Instance.TogglePause(false));
             SceneManager.LoadScene(sceneIndex);
         }
 
@@ -84,11 +83,9 @@ namespace Menu
         private void RestartGame()
         {
             Debug.Log("Reiniciando el juego...");
-            HandleGameManager(() =>
-            {
+
                 GameManager.Instance.TogglePause(false);
-                SceneManager.LoadScene(1);
-            });
+                SceneManager.LoadScene(0);
         }
 
         // Regresar al menú principal
@@ -97,38 +94,21 @@ namespace Menu
             Debug.Log("Regresando al menú principal...");
 
             // Asegurar que el panel de pausa está desactivado antes de cambiar de escena
-            if (model.pausePanel != null)
+            /*if (model.pausePanel != null)
             {
                 model.pausePanel.SetActive(false);
                 model.gameOverPanel.SetActive(false);
                 
                 Debug.Log("Panel de pausa desactivado.");
-            }
+            }*/
 
-            HandleGameManager(() =>
-            {
+
                 Time.timeScale = 1; // Restablecer el tiempo
                 Cursor.visible = true; // Asegurar que el cursor es visible
                 Cursor.lockState = CursorLockMode.None; // Desbloquear el cursor
                 SceneManager.LoadScene(0); // Cargar la escena del menú principal
-            });
+
         }
-
-
-
-
-        // Método auxiliar para manejar el GameManager de manera segura
-        private void HandleGameManager(System.Action action)
-        {
-            if (GameManager.Instance != null)
-            {
-                Debug.Log("GameManager detectado correctamente.");
-                action?.Invoke();
-            }
-            else
-            {
-                Debug.LogWarning("GameManager.Instance es null. Asegúrate de que está en la escena.");
-            }
-        }
+        
     }
 }
