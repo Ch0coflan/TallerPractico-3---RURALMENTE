@@ -83,9 +83,7 @@ namespace Menu
         private void RestartGame()
         {
             Debug.Log("Reiniciando el juego...");
-
-                GameManager.Instance.TogglePause(false);
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(1);
         }
 
         // Regresar al menú principal
