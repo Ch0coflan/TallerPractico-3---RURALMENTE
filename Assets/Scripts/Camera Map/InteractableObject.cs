@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 
@@ -29,7 +30,11 @@ namespace Scenes.Script
                      {
                          zoomController.ToggleZoom();
                      }
-                 }
+                    else if (CompareTag("Casa"))
+                    {
+                        LoadScene(2);
+                    }
+                }
              }
 
              if (isFocusing && _camTarget != null)
@@ -43,6 +48,8 @@ namespace Scenes.Script
                      isFocusing = false;
                  }
              }
+
+             
          }
 
          public void ToggleCanvas()
@@ -66,6 +73,12 @@ namespace Scenes.Script
         public bool IsActive()
         {
             return _isActive;
+        }
+
+        private void LoadScene(int sceneIndex)
+        {
+            Debug.Log($"Cargando escena {sceneIndex}...");
+            SceneManager.LoadScene(sceneIndex);
         }
     }
 }
