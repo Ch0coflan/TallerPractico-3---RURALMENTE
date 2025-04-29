@@ -37,7 +37,7 @@ namespace Menu
             // Menú de pausa y Game Over
             AssignButton(view.restartButton, RestartGame);
             AssignButton(view.continueButton, () => {});
-            AssignButton(view.gameOverRestartButton, RestartGame);
+            AssignButton(view.MapReturnButton, RestartGame);
             AssignButton(view.mainMenuButton, ReturnToMainMenu);
             AssignButton(view.gameOverMainMenuButton, ReturnToMainMenu);
         }
@@ -90,16 +90,6 @@ namespace Menu
         private void ReturnToMainMenu()
         {
             Debug.Log("Regresando al menú principal...");
-
-            // Asegurar que el panel de pausa está desactivado antes de cambiar de escena
-            /*if (model.pausePanel != null)
-            {
-                model.pausePanel.SetActive(false);
-                model.gameOverPanel.SetActive(false);
-                
-                Debug.Log("Panel de pausa desactivado.");
-            }*/
-
 
                 Time.timeScale = 1; // Restablecer el tiempo
                 Cursor.visible = true; // Asegurar que el cursor es visible

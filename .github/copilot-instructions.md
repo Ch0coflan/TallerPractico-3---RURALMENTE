@@ -2,7 +2,7 @@
 - Project name: TallerPractico-3---RURALMENTE
 - Unity version: Unity 6000.0.38f1
 - Active scene:
-  - Name: ChocoScene
+  - Name: SceneMap
   - Tags:
     - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Interactable, Casa
   - Layers:

@@ -16,7 +16,7 @@ namespace Menu
         [Header("Game Mode")]
         public Button continueButton;
         public Button restartButton;
-        public Button gameOverRestartButton;
+        public Button MapReturnButton;
         public Button mainMenuButton;
         public Button gameOverMainMenuButton;
     }
