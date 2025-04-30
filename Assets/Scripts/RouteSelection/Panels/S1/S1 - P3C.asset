@@ -18,11 +18,14 @@ MonoBehaviour:
   options:
   - optionText: "A veces, ponerle nombre a lo que uno siente ayuda a que los dem\xE1s
       tambi\xE9n lo entiendan."
+    isGoodDecision: 0
     nextPanelIndex: 11
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
+    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
   - optionText: Podemos buscar palabras para eso que le pasa. No tiene que hacerlo
       solo.
+    isGoodDecision: 0
     nextPanelIndex: 12
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
+    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
+  isEndPanel: 0
