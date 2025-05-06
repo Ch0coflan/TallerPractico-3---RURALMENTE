@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Water, UI, Outlined, No Outlined
 - Active game object:
-  - Name: Canvas
+  - Name: Mapa3
   - Tag: Untagged
-  - Layer: UI
+  - Layer: Outlined
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
