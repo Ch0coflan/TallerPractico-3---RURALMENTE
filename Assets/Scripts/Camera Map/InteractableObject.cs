@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -14,12 +15,12 @@ namespace Scenes.Script
          public Transform cameraFollowTarget; 
          public Transform actualFollowTarget; 
          public float focusSpeed = 5f;
-         private Transform _camTarget; 
+         private Transform _camTarget;
+        public Animator anim;
          [SerializeField] private bool isFocusing = false;
 
-
-
-         private void Update()
+       
+        private void Update()
          {
              if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
              {
@@ -32,7 +33,8 @@ namespace Scenes.Script
                      }
                     else if (CompareTag("Casa"))
                     {
-                        LoadScene(2);
+                        StartCoroutine(TransitionScene());
+                        anim.SetTrigger("Out");
                     }
                 }
              }
@@ -79,6 +81,14 @@ namespace Scenes.Script
         {
             Debug.Log($"Cargando escena {sceneIndex}...");
             SceneManager.LoadScene(sceneIndex);
+        }
+
+        public IEnumerator TransitionScene()
+        {
+            Debug.Log("Ejecutando corroutina");
+            yield return new WaitForSeconds(2);
+            LoadScene(2);
+
         }
     }
 }
