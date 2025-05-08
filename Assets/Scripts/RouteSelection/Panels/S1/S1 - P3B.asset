@@ -18,11 +18,13 @@ MonoBehaviour:
   options:
   - optionText: Lo que usted siente tiene valor. No es flojera, es un desgaste no
       hablado.
+    isGoodDecision: 0
     nextPanelIndex: 9
-    BG: {fileID: 21300000, guid: 47f4a8159943b33488e415bb937902bb, type: 3}
-    Character: {fileID: 21300000, guid: 40a1ca6d2316b4740ab8899b9294b3a7, type: 3}
+    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
+    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
   - optionText: "Si cree que es pasajero, quiz\xE1s con el tiempo mejore."
+    isGoodDecision: 0
     nextPanelIndex: 10
-    BG: {fileID: 21300000, guid: 47f4a8159943b33488e415bb937902bb, type: 3}
-    Character: {fileID: 21300000, guid: 40a1ca6d2316b4740ab8899b9294b3a7, type: 3}
+    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
+    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
   isEndPanel: 0

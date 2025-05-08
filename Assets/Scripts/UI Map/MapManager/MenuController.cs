@@ -97,6 +97,14 @@ namespace Menu
                 SceneManager.LoadScene(0); // Cargar la escena del menú principal
 
         }
-        
+
+      /*  public IEnumerator Transition(int sceneIndex)
+        {
+            Debug.Log("Ejecutando corroutina");
+            yield return new WaitForSeconds(2);
+            LoadScene(sceneIndex);
+
+        }*/
+
     }
 }

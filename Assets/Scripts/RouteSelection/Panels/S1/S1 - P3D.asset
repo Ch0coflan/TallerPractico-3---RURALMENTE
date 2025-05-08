@@ -18,11 +18,14 @@ MonoBehaviour:
   options:
   - optionText: Seria muy valiente de su parte.  Otros pueden encontrar valor en
       su testimonio.
+    isGoodDecision: 0
     nextPanelIndex: 13
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
+    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
   - optionText: Buscar ayuda no es  locura, es coraje. Ojala mas personas pudieran
       hacer lo que usted hace.
+    isGoodDecision: 0
     nextPanelIndex: 14
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
+    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
+  isEndPanel: 0
