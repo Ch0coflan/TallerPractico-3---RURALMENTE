@@ -9,10 +9,14 @@ public class StoryManager : MonoBehaviour
     public UnityEvent onEndedFirstStory;
     public UnityEvent onEndedSecondStory;
     public UnityEvent onEndedThirdStory;
+    public UnityEvent onEndedFourthStory;
+    public UnityEvent onEndedFifthStory;
     public UnityEvent onExitButton;
     public List<PanelData> story1 = new List<PanelData>();
     public List<PanelData> story2 = new List<PanelData>();
     public List<PanelData> story3 = new List<PanelData>();
+    public List<PanelData> story4 = new List<PanelData>();
+    public List<PanelData> story5 = new List<PanelData>();
     [SerializeField] private int _storyID;
     [Header("PanelData")]
     public TMP_Text infoText;
@@ -42,6 +46,8 @@ public class StoryManager : MonoBehaviour
             0 => story1,
             1 => story2,
             2 => story3,
+            3 => story4,
+            4 => story5,
             _ => story1,
         };
         currentPanelIndex = 0;
@@ -115,6 +121,8 @@ public class StoryManager : MonoBehaviour
             case 0: ReturnToMenu1(); break;
             case 1: ReturnToMenu2(); break;
             case 2: ReturnToMenu3(); break;
+            case 3: ReturnToMenu4(); break;
+            case 4: ReturnToMenu5(); break;
         }
     }
         
@@ -135,6 +143,20 @@ public class StoryManager : MonoBehaviour
     public void ReturnToMenu3()
     {
         onEndedThirdStory?.Invoke();
+        LoopManager.instance.SetStoryAsCompleted(_storyID);
+        returnButton.gameObject.SetActive(false);
+    }
+
+    public void ReturnToMenu4()
+    {
+        onEndedFourthStory?.Invoke();
+        LoopManager.instance.SetStoryAsCompleted(_storyID);
+        returnButton.gameObject.SetActive(false);
+    }
+
+    public void ReturnToMenu5()
+    {
+        onEndedFifthStory?.Invoke();
         LoopManager.instance.SetStoryAsCompleted(_storyID);
         returnButton.gameObject.SetActive(false);
     }
