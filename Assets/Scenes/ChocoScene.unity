@@ -662,7 +662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &467389675
 RectTransform:
   m_ObjectHideFlags: 0
@@ -794,8 +794,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c758342fdd9f544fb1f726f245d8d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 467389678}
-  fadeTransition: {fileID: 467389674}
 --- !u!114 &585562706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,7 +837,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 585562707}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 585562705}
+        m_TargetAssemblyTypeName: BackToMenu, Assembly-CSharp
+        m_MethodName: OnMapButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &585562707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1450,9 +1460,6 @@ GameObject:
   - component: {fileID: 798455741}
   - component: {fileID: 798455740}
   - component: {fileID: 798455739}
-  - component: {fileID: 798455745}
-  - component: {fileID: 798455744}
-  - component: {fileID: 798455743}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1546,62 +1553,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &798455743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798455738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7165808eb9b44ceeb1ea9d92883c4d57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playButton: {fileID: 0}
-  settingsButton: {fileID: 0}
-  creditsButton: {fileID: 0}
-  exitButton: {fileID: 0}
-  settingsBackButton: {fileID: 0}
-  creditsBackButton: {fileID: 0}
-  continueButton: {fileID: 0}
-  restartButton: {fileID: 0}
-  MapReturnButton: {fileID: 585562706}
-  mainMenuButton: {fileID: 923124983}
-  gameOverMainMenuButton: {fileID: 1853988989}
---- !u!114 &798455744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798455738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 954895d6ab54454ab164d85075bfd017, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
-  settingsPanel: {fileID: 0}
-  creditsPanel: {fileID: 0}
-  settingsBackButton: {fileID: 0}
-  creditsBackButton: {fileID: 0}
-  pausePanel: {fileID: 0}
-  gameOverPanel: {fileID: 0}
---- !u!114 &798455745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798455738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c4d5290499c4631a55191eb8592fb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  model: {fileID: 798455744}
-  view: {fileID: 798455743}
 --- !u!1 &888167812
 GameObject:
   m_ObjectHideFlags: 0
@@ -2819,7 +2770,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1853988990}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1853988992}
+        m_TargetAssemblyTypeName: BackToMenu, Assembly-CSharp
+        m_MethodName: OnMenuButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1853988990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2870,8 +2833,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c758342fdd9f544fb1f726f245d8d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 467389678}
-  fadeTransition: {fileID: 467389674}
 --- !u!1 &1904908331
 GameObject:
   m_ObjectHideFlags: 0
