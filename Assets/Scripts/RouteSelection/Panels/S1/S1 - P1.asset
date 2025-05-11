@@ -26,4 +26,6 @@ MonoBehaviour:
     nextPanelIndex: 2
     BG: {fileID: 21300000, guid: c33304742cc4f7040a2d9cf63a94b19a, type: 3}
     Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
+  firstBG: {fileID: 21300000, guid: 47f4a8159943b33488e415bb937902bb, type: 3}
+  firstCharacter: {fileID: 21300000, guid: bb70c36f3f4a78245a14c65befd0565c, type: 3}
   isEndPanel: 0

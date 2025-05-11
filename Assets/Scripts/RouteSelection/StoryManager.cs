@@ -74,6 +74,8 @@ public class StoryManager : MonoBehaviour
         {
             option1.gameObject.SetActive(false);
             option2.gameObject.SetActive(false);
+            BG.sprite = currentPanel.firstBG;
+            Character.sprite = currentPanel.firstCharacter;
 
             if (currentPanel.options.Count > 0)
             {
