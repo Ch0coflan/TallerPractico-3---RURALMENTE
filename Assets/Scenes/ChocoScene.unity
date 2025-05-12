@@ -1434,6 +1434,7 @@ MonoBehaviour:
   BG: {fileID: 8765547472577083688}
   Character: {fileID: 5718901789844008192}
   optionContainer: {fileID: 4619035746706487443}
+  _isFirstPanel: 0
 --- !u!4 &722567629
 Transform:
   m_ObjectHideFlags: 0
