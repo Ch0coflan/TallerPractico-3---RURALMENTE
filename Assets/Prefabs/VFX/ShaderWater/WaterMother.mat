@@ -99,12 +99,12 @@ Material:
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _CousticCotaut: 0.04
-    - _CousticSpeed: 0.2
+    - _CousticSpeed: 0.05
     - _CousticTilling: 1.67
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Depth: 1.4
-    - _DepthFalloff: 0.7
+    - _Depth: 1.51
+    - _DepthFalloff: 0.74
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -143,8 +143,8 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FoamColor: {r: 0.08036668, g: 0.5167572, b: 0.8113208, a: 1}
     - _FoamSpeed: {r: 0, g: 0.01, b: 0, a: 0}
-    - _MainColor: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
-    - _ShoreColor: {r: 1, g: 1, b: 1, a: 0.99215686}
+    - _MainColor: {r: 0, g: 0.43849897, b: 1, a: 1}
+    - _ShoreColor: {r: 0.03773582, g: 0.035065833, b: 0.035065833, a: 0.99215686}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
