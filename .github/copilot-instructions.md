@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Water, UI, Outlined, No Outlined
 - Active game object:
-  - Name: ZonaCafe
-  - Tag: Interactable
-  - Layer: Default
+  - Name: Clouds
+  - Tag: Untagged
+  - Layer: UI
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

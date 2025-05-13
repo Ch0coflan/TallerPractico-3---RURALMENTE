@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using Camera_Map;
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -16,11 +18,16 @@ namespace Scenes.Script
          public Transform actualFollowTarget; 
          public float focusSpeed = 5f;
          private Transform _camTarget;
-        public Animator anim;
+         public Animator anim;
          [SerializeField] private bool isFocusing = false;
+         [SerializeField] private AnimationActive animationActive;
+         public CinemachineCamera cinemachineCamera;
+         public CinemachineCamera cameraHouse;
 
-       
-        private void Update()
+
+         
+
+         private void Update()
          {
              if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
              {
@@ -31,10 +38,14 @@ namespace Scenes.Script
                      {
                          zoomController.ToggleZoom();
                      }
-                    else if (CompareTag("Casa"))
+                     else if (hit.collider.CompareTag("Casa"))
                     {
+                        cameraHouse.Priority = 20;
+                        cinemachineCamera.Priority = 10;
+                        animationActive.PlayAnimation();
+                        cameraFollowTarget = hit.transform;
                         StartCoroutine(TransitionScene());
-                        anim.SetTrigger("Out");
+                        
                     }
                 }
              }
@@ -86,9 +97,16 @@ namespace Scenes.Script
         public IEnumerator TransitionScene()
         {
             Debug.Log("Ejecutando corroutina");
+            yield return new WaitForSeconds(8);
+            anim.SetTrigger("Out");
             yield return new WaitForSeconds(2);
             LoadScene(2);
 
+        }
+
+        public IEnumerator Wait(float seconds)
+        {
+            yield return new WaitForSeconds(seconds);
         }
     }
 }
