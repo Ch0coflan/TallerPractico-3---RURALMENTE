@@ -12,15 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P3B
   m_EditorClassIdentifier: 
-  text: s2 p3b
+  text: Muchas noches no duermo. Siento como si me faltara el aire, como si algo
+    malo fuera a pasar. Es una angustia que no se me va.
   options:
-  - optionText: s2 p4be
+  - optionText: Lo importante es que mantenga el optimismo, no es bueno pensar  tanto
+      en lo malo.
+    isGoodDecision: 0
     nextPanelIndex: 9
-    isGoodEnding: 0
-    BG: {fileID: 0}
-    Character: {fileID: 0}
-  - optionText: s2 p4be2
+    BG: {fileID: 21300000, guid: 6b377cc9ba0e7704a83c748a1eb4e01e, type: 3}
+    Character: {fileID: 21300000, guid: f01aa71810f23b748b8948f1e97abd25, type: 3}
+  - optionText: " Que le parece si  practicamos unos ejercicios de relajaci\xF3n
+      mientras se van dando las cosas?  Podemos volver a hablar cuando quiera"
+    isGoodDecision: 0
     nextPanelIndex: 10
-    isGoodEnding: 0
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: bdfccd09bcf40bf4290900044e24703d, type: 3}
+    Character: {fileID: 21300000, guid: 345ee6b8534c9c24dad0eee84bce6692, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
+  isEndPanel: 0

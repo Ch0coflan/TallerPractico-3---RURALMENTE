@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P4BE
   m_EditorClassIdentifier: 
-  text: s2 p4be
+  text: "Ya sab\xEDa yo que esto no iba a servir de nada. Siempre es lo mismo: promesas
+    y palabras bonitas. Mejor me las arreglo como pueda como he hecho siempre."
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1
