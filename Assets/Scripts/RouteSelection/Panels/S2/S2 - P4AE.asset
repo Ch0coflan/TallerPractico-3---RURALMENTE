@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P4AE
   m_EditorClassIdentifier: 
-  text: s2 p4ae
+  text: "Est\xE1 bien... intentar\xE9 lo mas que pueda, aunque no es tan f\xE1cil.
+    Pero gracias por la intenci\xF3n. Me voy con la cabeza un poco mas tranquila."
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

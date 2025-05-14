@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P4CE
   m_EditorClassIdentifier: 
-  text: s2 p4ce
+  text: "No se preocupe, doctora. Yo s\xE9 que hay gente que necesita mas ayuda que
+    yo. Yo ya estoy vieja, ya pas\xE9 por todo. Gracias igual"
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

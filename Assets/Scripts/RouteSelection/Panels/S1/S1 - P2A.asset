@@ -21,10 +21,12 @@ MonoBehaviour:
     isGoodDecision: 1
     nextPanelIndex: 3
     BG: {fileID: 21300000, guid: c87b13d7f8a9cd54682f980e8e7e4428, type: 3}
-    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
+    Character: {fileID: 21300000, guid: cc30dd50620b5904ebda213772571760, type: 3}
   - optionText: Tal vez solo necesita descansar mas. A veces el cuerpo pide pausa.
     isGoodDecision: 0
     nextPanelIndex: 4
     BG: {fileID: 21300000, guid: c33304742cc4f7040a2d9cf63a94b19a, type: 3}
-    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
+    Character: {fileID: 21300000, guid: 356fc03373b9611419083e1a0cb2aadc, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 0
