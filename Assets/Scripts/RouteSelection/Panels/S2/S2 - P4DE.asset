@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P4DE
   m_EditorClassIdentifier: 
-  text: s2 p4de
+  text: "Pensaba que ya era tarde para cambiar las cosas. Pero me ha hecho pensar.
+    Quiz\xE1s si puedo darme un ratico para mi, aunque sea poquito. Muchas gracias."
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

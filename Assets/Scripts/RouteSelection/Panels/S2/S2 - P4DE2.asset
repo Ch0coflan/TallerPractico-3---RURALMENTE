@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P4DE2
   m_EditorClassIdentifier: 
-  text: s2 p4de2
+  text: "No s\xE9 si pueda hacer eso, pero le agradezco el tiempo, y  que me haya
+    hecho pensar en mi un momentico."
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

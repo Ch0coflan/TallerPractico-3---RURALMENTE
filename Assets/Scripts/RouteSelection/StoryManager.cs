@@ -141,7 +141,9 @@ public class StoryManager : MonoBehaviour
             case 4: ReturnToMenu5(); break;
         }
     }
-        
+
+    #region Returns
+
     public void ReturnToMenu1()
     {
         onEndedFirstStory?.Invoke();
@@ -183,4 +185,5 @@ public class StoryManager : MonoBehaviour
         currentPanelIndex = 0;
         currentStory = null;   
     }
+    #endregion
 }

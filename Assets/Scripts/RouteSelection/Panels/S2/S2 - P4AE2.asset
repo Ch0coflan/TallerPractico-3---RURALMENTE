@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P4AE2
   m_EditorClassIdentifier: 
-  text: s2 p4ae2
+  text: "Gracias por tomarse el tiempo de escucharme. No sab\xEDa cuanto necesitaba
+    desahogarme. Me siento un poquito m\xE1s liviana... Tal vez s\xED pueda intentar
+    buscar ayuda otra vez, si me acompa\xF1a-"
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

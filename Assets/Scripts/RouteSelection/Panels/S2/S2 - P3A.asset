@@ -12,15 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P3A
   m_EditorClassIdentifier: 
-  text: s2 p3a
+  text: "Si... A veces no puedo ni pensar en otra cosa. Me dan ganas de llorar pero
+    no quiero que me vean as\xED. Me aguanto."
   options:
-  - optionText: s2 p4ae
+  - optionText: "Es entendible que se sienta as\xED, pero preocuparse no va a solucionar
+      las cosas. Trate de  enfocarse en lo que s\xED puede hacer."
+    isGoodDecision: 0
     nextPanelIndex: 7
-    isGoodEnding: 0
-    BG: {fileID: 0}
-    Character: {fileID: 0}
-  - optionText: s2 p4ae2
+    BG: {fileID: 21300000, guid: 6b377cc9ba0e7704a83c748a1eb4e01e, type: 3}
+    Character: {fileID: 21300000, guid: f01aa71810f23b748b8948f1e97abd25, type: 3}
+  - optionText: "Muchas gracias por cont\xE1rmelo, ponerlo en palabras permite entenderlo.
+      Podemos continuar despu\xE9s si lo desea."
+    isGoodDecision: 1
     nextPanelIndex: 8
-    isGoodEnding: 0
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: bdfccd09bcf40bf4290900044e24703d, type: 3}
+    Character: {fileID: 21300000, guid: 345ee6b8534c9c24dad0eee84bce6692, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
+  isEndPanel: 0
