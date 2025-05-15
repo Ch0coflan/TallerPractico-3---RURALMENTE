@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P1
   m_EditorClassIdentifier: 
-  text: "Buenas... Usted es la psic\xF3loga, cierto?  Mire, yo no vengo porque este
-    mal... Es que mi hija dice que me ve raro. Pero yo solo estoy bien, solo... a
-    veces uno se siente cansado.  Debe ser la edad, no?"
+  text: "Buenas... Usted es la psic\xF3loga, cierto?   Mire, yo no vengo porque este
+    mal...  Es que mi hija menor dice que me ve raro.  Pero yo estoy bien,  solo...
+    a veces uno se siente cansado.  Debe ser la edad, no?"
   options:
-  - optionText: Le gustaria contarme mas sobre  como se ha sentido ultimamente?
+  - optionText: Si, soy yo. Es algo nuevo o algo que ya venia sintiendo hace tiempo?
     isGoodDecision: 1
     nextPanelIndex: 1
-    BG: {fileID: 21300000, guid: c87b13d7f8a9cd54682f980e8e7e4428, type: 3}
+    BG: {fileID: 21300000, guid: 98c0dce1368b21a48aecb27bb5b6f88e, type: 3}
     Character: {fileID: 21300000, guid: c8296bc4e0202af4391807f608725202, type: 3}
-  - optionText: Si quiere, solo conversamos un rato sin compromiso.
+  - optionText: "Claro, cu\xE9nteme, a que se debe eso?"
     isGoodDecision: 1
     nextPanelIndex: 2
-    BG: {fileID: 21300000, guid: c87b13d7f8a9cd54682f980e8e7e4428, type: 3}
+    BG: {fileID: 21300000, guid: 98c0dce1368b21a48aecb27bb5b6f88e, type: 3}
     Character: {fileID: 21300000, guid: c8296bc4e0202af4391807f608725202, type: 3}
-  firstBG: {fileID: 21300000, guid: c33304742cc4f7040a2d9cf63a94b19a, type: 3}
-  firstCharacter: {fileID: 21300000, guid: 356fc03373b9611419083e1a0cb2aadc, type: 3}
+  firstBG: {fileID: 21300000, guid: c1f861f697237054f9f948657e9a57dc, type: 3}
+  firstCharacter: {fileID: 21300000, guid: cfb36d312f577b849bd2b332894101c3, type: 3}
   isEndPanel: 0

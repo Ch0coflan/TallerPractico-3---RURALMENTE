@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S3 - P4BE
   m_EditorClassIdentifier: 
-  text: s3 p4be
+  text: "Seria muy bueno, ellos tambi\xE9n  necesitan entender que necesito mi estudio."
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

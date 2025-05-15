@@ -12,15 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S3 - P3D
   m_EditorClassIdentifier: 
-  text: s3 p3d
+  text: "Realmente no lo hago, siempre que termino algo en mi casa aparece algo nuevo
+    y cuando menos me doy cuenta, ya es de noche y no hice las tareas. Luego por
+    eso me rega\xF1an."
   options:
-  - optionText: s3 p4de
+  - optionText: "Tienes que organizar tu tiempo antes de empezar a organizar lo dem\xE1s,
+      sino vas a seguir faltando con todo."
+    isGoodDecision: 0
     nextPanelIndex: 13
-    isGoodEnding: 1
-    BG: {fileID: 0}
-    Character: {fileID: 0}
-  - optionText: s3 p4de2
+    BG: {fileID: 21300000, guid: ba055582c75f92047a803432df0f8b2a, type: 3}
+    Character: {fileID: 21300000, guid: d8b059e1156ab8b48809f6d136bc13be, type: 3}
+  - optionText: Tienes un sentido de la responsabilidad fuerte, aunque tienes que
+      enfocarlo. Puedes volver cuando quieras y lo vamos mirando, te parece?
+    isGoodDecision: 1
     nextPanelIndex: 14
-    isGoodEnding: 0
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: 6e501bd80fc76c44581b3a09a03c4cf5, type: 3}
+    Character: {fileID: 21300000, guid: 21a598a0656cfb941a76f8e35e9dcea0, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
+  isEndPanel: 0

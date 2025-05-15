@@ -12,14 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S3 - P2B
   m_EditorClassIdentifier: 
-  text: p2b
+  text: "Me encargo de los animales, el cultivo y de arreglar la casa cuando mis
+    pap\xE1s no est\xE1n. Como mi hermano mayor ya no esta en la casa, me hicieron
+    responsable de esas tareas."
   options:
-  - optionText: s3 p3c
+  - optionText: Y no sientes que es mucho trabajo?
+    isGoodDecision: 0
     nextPanelIndex: 5
-    BG: {fileID: 0}
-    Character: {fileID: 0}
-  - optionText: s3 p3d
+    BG: {fileID: 21300000, guid: a1c87e22fe3d9fc458a437288f3c20d6, type: 3}
+    Character: {fileID: 21300000, guid: f32ae578a4c2ffc4bb51db3dfb308119, type: 3}
+  - optionText: Y como te organizas para cumplir con todo?
+    isGoodDecision: 1
     nextPanelIndex: 6
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: 3017338861005684bb6b7cfca2f7c012, type: 3}
+    Character: {fileID: 21300000, guid: 5f7a986f402550d488fc9b853ca326e9, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 0

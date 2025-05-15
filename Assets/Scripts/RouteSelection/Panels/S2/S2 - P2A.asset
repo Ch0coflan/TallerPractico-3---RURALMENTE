@@ -20,7 +20,7 @@ MonoBehaviour:
     nextPanelIndex: 3
     BG: {fileID: 21300000, guid: eac9f54848986fa41a2843bc006b5470, type: 3}
     Character: {fileID: 21300000, guid: 5ceec4dd2397e2b4785321a61f375b4c, type: 3}
-  - optionText: Te sientes asi todo el dia, o es por momentos?
+  - optionText: Ha descansado bien los ultimos dias?
     isGoodDecision: 0
     nextPanelIndex: 4
     BG: {fileID: 21300000, guid: c2fe3b51b37501548ad0f9a5aaa5ca6f, type: 3}

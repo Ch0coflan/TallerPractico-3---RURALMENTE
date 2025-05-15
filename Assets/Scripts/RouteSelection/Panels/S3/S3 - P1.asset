@@ -12,14 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S3 - P1
   m_EditorClassIdentifier: 
-  text: p1
+  text: "Buenas, la profesora me dijo que viniera a hablar con usted, que porque
+    hab\xEDa faltado mucho a clase.  Todav\xEDa no entiende que yo tengo cosas que
+    hacer en mi casa."
   options:
-  - optionText: s3 p2a
+  - optionText: "Como as\xED? Te gustar\xEDa hablarme mas sobre eso?"
+    isGoodDecision: 1
     nextPanelIndex: 1
-    BG: {fileID: 0}
-    Character: {fileID: 21300000, guid: 64a50e98bab64fa478fe9bd176fd211a, type: 3}
-  - optionText: s3 p2b
+    BG: {fileID: 21300000, guid: 3017338861005684bb6b7cfca2f7c012, type: 3}
+    Character: {fileID: 21300000, guid: 5f7a986f402550d488fc9b853ca326e9, type: 3}
+  - optionText: "Claro, cu\xE9ntame. Que cosas tienes que hacer en la casa?"
+    isGoodDecision: 1
     nextPanelIndex: 2
-    BG: {fileID: 0}
-    Character: {fileID: 21300000, guid: 64a50e98bab64fa478fe9bd176fd211a, type: 3}
+    BG: {fileID: 21300000, guid: 3017338861005684bb6b7cfca2f7c012, type: 3}
+    Character: {fileID: 21300000, guid: 5f7a986f402550d488fc9b853ca326e9, type: 3}
+  firstBG: {fileID: 21300000, guid: a1c87e22fe3d9fc458a437288f3c20d6, type: 3}
+  firstCharacter: {fileID: 21300000, guid: f32ae578a4c2ffc4bb51db3dfb308119, type: 3}
   isEndPanel: 0
