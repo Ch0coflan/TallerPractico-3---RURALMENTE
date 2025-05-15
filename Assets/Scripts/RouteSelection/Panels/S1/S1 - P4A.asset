@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
+  m_Name: S1 - P4A
+  m_EditorClassIdentifier: 
+  text: Lo mental, claro, la cabeza a uno no lo deja quieto cuando las preocupaciones
+    son muchas y queda tanto por hacer. El trabajo y la familia siempre son dos prioridades
+    en la vida de un hombre.
+  options:
+  - optionText: "Con todo lo que me ha dicho no le parece que su cuerpo y mente le
+      est\xE1n pidiendo algo especifico?"
+    isGoodDecision: 1
+    nextPanelIndex: 12
+    BG: {fileID: 21300000, guid: b003c3ac497a6c0489035b0945d6196a, type: 3}
+    Character: {fileID: 21300000, guid: cc30dd50620b5904ebda213772571760, type: 3}
+  - optionText: Vaya descanse, es bueno hacerlo de vez en cuando
+    isGoodDecision: 0
+    nextPanelIndex: 13
+    BG: {fileID: 21300000, guid: a3f8ebec83e639a49904377e74aaa349, type: 3}
+    Character: {fileID: 21300000, guid: dd8dbbe87141a0b4691b3135c39d76c8, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
+  isEndPanel: 0

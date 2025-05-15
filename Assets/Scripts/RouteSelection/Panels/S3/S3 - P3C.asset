@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
+  m_Name: S3 - P3C
+  m_EditorClassIdentifier: 
+  text: "Si, pero yo me aguanto. Todos los d\xEDas los veo levantarse temprano para
+    salir a trabajar el campo, lo menos que puedo hacer es  ayudar."
+  options:
+  - optionText: "Y si hablas con tus pap\xE1s? Quiz\xE1s lo entiendan."
+    isGoodDecision: 0
+    nextPanelIndex: 11
+    BG: {fileID: 21300000, guid: ba055582c75f92047a803432df0f8b2a, type: 3}
+    Character: {fileID: 21300000, guid: d8b059e1156ab8b48809f6d136bc13be, type: 3}
+  - optionText: "y si divides las responsabilidades? Podemos intentarlo y si quieres
+      hablo con tus pap\xE1s"
+    isGoodDecision: 1
+    nextPanelIndex: 12
+    BG: {fileID: 21300000, guid: 6e501bd80fc76c44581b3a09a03c4cf5, type: 3}
+    Character: {fileID: 21300000, guid: 21a598a0656cfb941a76f8e35e9dcea0, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
+  isEndPanel: 0

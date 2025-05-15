@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
+  m_Name: S3 - P2A
+  m_EditorClassIdentifier: 
+  text: "En la finca de mi papa el trabajo es mucho y \xE9l no es capaz de terminar
+    todo solo. Tengo que ocuparme de los animales, el cultivo y de organizar la casa
+    mientras mis pap\xE1s est\xE1n en el monte o bajando las cosas al pueblo."
+  options:
+  - optionText: Como te hace sentir tener que hacer todo eso?
+    isGoodDecision: 1
+    nextPanelIndex: 3
+    BG: {fileID: 21300000, guid: 3017338861005684bb6b7cfca2f7c012, type: 3}
+    Character: {fileID: 21300000, guid: 5f7a986f402550d488fc9b853ca326e9, type: 3}
+  - optionText: Y por eso es que faltas al colegio tan seguido?
+    isGoodDecision: 0
+    nextPanelIndex: 4
+    BG: {fileID: 21300000, guid: ba055582c75f92047a803432df0f8b2a, type: 3}
+    Character: {fileID: 21300000, guid: d8b059e1156ab8b48809f6d136bc13be, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
+  isEndPanel: 0

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
+  m_Name: S1 - P1
+  m_EditorClassIdentifier: 
+  text: "Buenas... Usted es la psic\xF3loga, cierto?   Mire, yo no vengo porque este
+    mal...  Es que mi hija menor dice que me ve raro.  Pero yo estoy bien,  solo...
+    a veces uno se siente cansado.  Debe ser la edad, no?"
+  options:
+  - optionText: Si, soy yo. Es algo nuevo o algo que ya venia sintiendo hace tiempo?
+    isGoodDecision: 1
+    nextPanelIndex: 1
+    BG: {fileID: 21300000, guid: 98c0dce1368b21a48aecb27bb5b6f88e, type: 3}
+    Character: {fileID: 21300000, guid: c8296bc4e0202af4391807f608725202, type: 3}
+  - optionText: "Claro, cu\xE9nteme, a que se debe eso?"
+    isGoodDecision: 1
+    nextPanelIndex: 2
+    BG: {fileID: 21300000, guid: 98c0dce1368b21a48aecb27bb5b6f88e, type: 3}
+    Character: {fileID: 21300000, guid: c8296bc4e0202af4391807f608725202, type: 3}
+  firstBG: {fileID: 21300000, guid: c1f861f697237054f9f948657e9a57dc, type: 3}
+  firstCharacter: {fileID: 21300000, guid: cfb36d312f577b849bd2b332894101c3, type: 3}
+  isEndPanel: 0
