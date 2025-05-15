@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P4CE
   m_EditorClassIdentifier: 
-  text: "Como decir \"me siento cansado\" o  \"me siento triste\"?... Voy a pensar
-    en eso, quiz\xE1s no estoy tan solo como cre\xEDa."
+  text: "Porque... Es que a uno no le ensenaron como hacer eso, y uno no esta acostumbrado
+    a hablar estas cosas con la familia... Pero ahora que lo pienso, si puedo permit\xEDrmelo,
+    no veo porque no."
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

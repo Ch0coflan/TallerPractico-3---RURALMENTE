@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P4CE2
   m_EditorClassIdentifier: 
-  text: Nunca he sido bueno para hablar de lo que siento... Menos con alguien desconocido...
-    Si usted me ayuda, lo puedo intentar.
+  text: "No trato de hacerme el fuerte, simplemente uno no se siente c\xF3modo con
+    la vulnerabilidad, pens\xE9 que lo entender\xEDa."
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

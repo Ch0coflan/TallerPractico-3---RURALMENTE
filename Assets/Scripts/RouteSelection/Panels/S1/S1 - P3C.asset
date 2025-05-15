@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: S1 - P3C
   m_EditorClassIdentifier: 
   text: "Mi se\xF1ora me dice que estoy cambiado, que ya no sonr\xEDo y que estoy
-    muy  callado, pero no se que  decirle... Como le explico algo que ni siquiera
+    muy  callado, pero no se que  decirle... Como le explico algo que ni siquiera 
     yo entiendo?"
   options:
-  - optionText: "A veces, ponerle nombre a lo que uno siente ayuda a que los dem\xE1s
-      tambi\xE9n lo entiendan."
+  - optionText: Por que no se permite apoyarse en quienes lo rodean?
+    isGoodDecision: 1
+    nextPanelIndex: 8
+    BG: {fileID: 21300000, guid: b003c3ac497a6c0489035b0945d6196a, type: 3}
+    Character: {fileID: 21300000, guid: cc30dd50620b5904ebda213772571760, type: 3}
+  - optionText: No es necesario que se haga el fuerte frente a su familia.
     isGoodDecision: 0
-    nextPanelIndex: 11
-    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
-  - optionText: Podemos buscar palabras para eso que le pasa. No tiene que hacerlo
-      solo.
-    isGoodDecision: 0
-    nextPanelIndex: 12
-    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
+    nextPanelIndex: 9
+    BG: {fileID: 21300000, guid: 2d679f14ad494904e8f1732d9a5e1a99, type: 3}
+    Character: {fileID: 21300000, guid: dd8dbbe87141a0b4691b3135c39d76c8, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 0

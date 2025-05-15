@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P4DE2
   m_EditorClassIdentifier: 
-  text: En el pueblo, hablar de la cabeza es cosa de locos. Gracias por su tiempo.
+  text: "En el pueblo, hablar de la cabeza es cosa de locos. No deb\xED haber venido."
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

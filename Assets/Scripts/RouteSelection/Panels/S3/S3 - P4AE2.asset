@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S3 - P4AE2
   m_EditorClassIdentifier: 
-  text: s3 p4ae2
+  text: "No tengo problema, pero me gustar\xEDa poder hacer las tareas y salir a
+    jugar. Volver\xE9 ma\xF1ana, chaoo."
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

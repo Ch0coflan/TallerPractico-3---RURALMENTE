@@ -12,15 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S3 - P3B
   m_EditorClassIdentifier: 
-  text: s3 p3b
+  text: "Si, pues mis pap\xE1s me dicen que es mas importante el trabajo en la casa
+    que venir al colegio."
   options:
-  - optionText: s3 p4be
+  - optionText: "Entiendo que las tareas del hogar son importantes, pero tambi\xE9n
+      lo es tu educaci\xF3n. Te gustar\xEDa que te ayude a explic\xE1rselo a tus
+      pap\xE1s?"
+    isGoodDecision: 0
     nextPanelIndex: 9
-    isGoodEnding: 1
-    BG: {fileID: 0}
-    Character: {fileID: 0}
-  - optionText: s3 p4be2
+    BG: {fileID: 21300000, guid: 6e501bd80fc76c44581b3a09a03c4cf5, type: 3}
+    Character: {fileID: 21300000, guid: 21a598a0656cfb941a76f8e35e9dcea0, type: 3}
+  - optionText: Bueno, si eso es lo que dicen tus papas, que puedo hacer yo?
+    isGoodDecision: 0
     nextPanelIndex: 10
-    isGoodEnding: 0
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: 1bc4ab5b360145a49bd4c64b924b35e5, type: 3}
+    Character: {fileID: 21300000, guid: bd45bbb52bbfdd448b47f07d54af26e4, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
+  isEndPanel: 0

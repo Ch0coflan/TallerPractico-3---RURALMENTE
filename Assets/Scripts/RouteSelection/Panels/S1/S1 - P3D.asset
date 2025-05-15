@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P3D
   m_EditorClassIdentifier: 
-  text: "Me da miedo que si hablo de esto me vean como un loco. Aqu\xED la gente
-    no cree tanto en estas cosas. Si se  dan cuenta que vine a hablar con usted,
-    seguro se burlan."
+  text: "Me da miedo que si hablo de esto me vean como un loco o un vago. Aqu\xED
+    la gente no cree tanto en estas cosas. Si se  dan cuenta que vine a hablar con
+    usted, seguro se burlan."
   options:
-  - optionText: Seria muy valiente de su parte.  Otros pueden encontrar valor en
-      su testimonio.
+  - optionText: "Y siente que fue una buena decisi\xF3n haber acudido a este espacio?"
+    isGoodDecision: 1
+    nextPanelIndex: 10
+    BG: {fileID: 21300000, guid: b003c3ac497a6c0489035b0945d6196a, type: 3}
+    Character: {fileID: 21300000, guid: cc30dd50620b5904ebda213772571760, type: 3}
+  - optionText: El miedo no le ayudara a llegar a  ninguna parte
     isGoodDecision: 0
-    nextPanelIndex: 13
-    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
-  - optionText: Buscar ayuda no es  locura, es coraje. Ojala mas personas pudieran
-      hacer lo que usted hace.
-    isGoodDecision: 0
-    nextPanelIndex: 14
-    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
+    nextPanelIndex: 11
+    BG: {fileID: 21300000, guid: 2d679f14ad494904e8f1732d9a5e1a99, type: 3}
+    Character: {fileID: 21300000, guid: dd8dbbe87141a0b4691b3135c39d76c8, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 0
