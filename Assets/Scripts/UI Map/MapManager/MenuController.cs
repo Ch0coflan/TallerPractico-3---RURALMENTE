@@ -77,6 +77,7 @@ namespace Menu
         {
             Debug.Log($"Cargando escena {sceneIndex}...");
             SceneManager.LoadScene(sceneIndex);
+            AudioManager.Instance.PlayMusic("MusicaAmbiente");
         }
 
         // Reiniciar el juego

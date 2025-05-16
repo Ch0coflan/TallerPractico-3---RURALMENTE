@@ -92,6 +92,7 @@ namespace Scenes.Script
         {
             Debug.Log($"Cargando escena {sceneIndex}...");
             SceneManager.LoadScene(sceneIndex);
+            AudioManager.Instance.PlayMusic("MusicaCasa");
         }
 
         public IEnumerator TransitionScene()
