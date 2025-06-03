@@ -662,7 +662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &467389675
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1484,6 +1484,7 @@ GameObject:
   - component: {fileID: 705130457}
   - component: {fileID: 705130459}
   - component: {fileID: 705130458}
+  - component: {fileID: 705130460}
   m_Layer: 5
   m_Name: Sofia
   m_TagString: Untagged
@@ -1548,6 +1549,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705130456}
   m_CullTransparentMesh: 1
+--- !u!95 &705130460
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705130456}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c125546f69c059c43bb8e331ec95642d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &722567627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,6 +1807,7 @@ MonoBehaviour:
   - {fileID: 1548700037}
   optionContainer: {fileID: 4619035746706487443}
   _isFirstPanel: 0
+  animator: {fileID: 0}
 --- !u!4 &722567629
 Transform:
   m_ObjectHideFlags: 0
@@ -2800,6 +2824,7 @@ GameObject:
   - component: {fileID: 1548700036}
   - component: {fileID: 1548700038}
   - component: {fileID: 1548700037}
+  - component: {fileID: 1548700039}
   m_Layer: 5
   m_Name: Laura
   m_TagString: Untagged
@@ -2864,6 +2889,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548700035}
   m_CullTransparentMesh: 1
+--- !u!95 &1548700039
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548700035}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c125546f69c059c43bb8e331ec95642d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1751665791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5003,13 +5050,36 @@ GameObject:
   - component: {fileID: 1362318824939687481}
   - component: {fileID: 554113322526753962}
   - component: {fileID: 5718901789844008192}
+  - component: {fileID: 8131284050271416215}
   m_Layer: 5
   m_Name: Pablo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!95 &8131284050271416215
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8131284050271416214}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c125546f69c059c43bb8e331ec95642d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!224 &8688266661797865346
 RectTransform:
   m_ObjectHideFlags: 0

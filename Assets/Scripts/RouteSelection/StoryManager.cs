@@ -28,7 +28,7 @@ public class StoryManager : MonoBehaviour
     public Transform optionContainer;
     [SerializeField] private bool _isFirstPanel = true;
     //public AudioSource characterAudioSource;
-    //public Animator animator;
+    public Animator animator;
 
     private List<PanelData> currentStory;
     private int currentPanelIndex = 0;  
@@ -84,6 +84,12 @@ public class StoryManager : MonoBehaviour
                 BG.sprite = currentPanel.firstBG;
                 Characters[_storyID].sprite = currentPanel.firstCharacter;
             }
+        }
+
+        if(!string.IsNullOrEmpty(currentPanel.charAnim))
+        {
+            animator = Characters[_storyID].gameObject.GetComponent<Animator>();
+            animator.SetTrigger(currentPanel.charAnim);
         }
 
         if (currentPanel != null)

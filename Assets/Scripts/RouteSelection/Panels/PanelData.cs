@@ -10,15 +10,15 @@ public class PanelData : ScriptableObject
     public Sprite firstBG;
     public Sprite firstCharacter;
     public bool isEndPanel;
-      
+    public string charAnim;
 }
 
 [System.Serializable]
 public class PanelOption
 {
     public string optionText;
-    public bool isGoodDecision; 
-    public int nextPanelIndex;  
+    public bool isGoodDecision;
+    public int nextPanelIndex;
     public Sprite BG;
     public Sprite Character;
 }
