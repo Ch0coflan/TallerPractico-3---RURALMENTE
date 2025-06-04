@@ -25,3 +25,4 @@ MonoBehaviour:
   firstCharacter: {fileID: 0}
   isEndPanel: 0
   charAnim: Shake
+  charSound: {fileID: 8300000, guid: 15ebcc5afe4cb844bac9a946cbb6794c, type: 3}

@@ -11,6 +11,7 @@ public class PanelData : ScriptableObject
     public Sprite firstCharacter;
     public bool isEndPanel;
     public string charAnim;
+    public AudioClip charSound;
 }
 
 [System.Serializable]

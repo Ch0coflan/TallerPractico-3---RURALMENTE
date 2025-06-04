@@ -27,7 +27,7 @@ public class StoryManager : MonoBehaviour
     public Image[] Characters;
     public Transform optionContainer;
     [SerializeField] private bool _isFirstPanel = true;
-    //public AudioSource characterAudioSource;
+    public AudioSource characterAudioSource;
     public Animator animator;
 
     private List<PanelData> currentStory;
@@ -90,6 +90,12 @@ public class StoryManager : MonoBehaviour
         {
             animator = Characters[_storyID].gameObject.GetComponent<Animator>();
             animator.SetTrigger(currentPanel.charAnim);
+        }
+
+        if(currentPanel.charSound != null)
+        {
+            characterAudioSource = Characters[_storyID].gameObject.GetComponent<AudioSource>(); 
+            characterAudioSource.PlayOneShot(currentPanel.charSound);
         }
 
         if (currentPanel != null)
