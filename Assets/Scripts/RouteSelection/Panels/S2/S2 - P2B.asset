@@ -12,15 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P2B
   m_EditorClassIdentifier: 
-  text: s2 p2b
+  text: "Ellos hacen lo q pueden, pero ya tienen sus propios problemas. Yo no quiero
+    ser una carga... ya bastante tienen con sus hijos, el trabajo, la finca... Me
+    siento m\xE1s sola cada d\xEDa."
   options:
-  - optionText: s2 p3c
+  - optionText: Por que piensa que ellos no pueden ayudarle?
+    isGoodDecision: 0
     nextPanelIndex: 5
-    isGoodEnding: 0
-    BG: {fileID: 0}
-    Character: {fileID: 0}
-  - optionText: s2 p3d
+    BG: {fileID: 21300000, guid: c2fe3b51b37501548ad0f9a5aaa5ca6f, type: 3}
+    Character: {fileID: 21300000, guid: b2c060a4f8460a1438ef75fce9c4ac07, type: 3}
+  - optionText: " Qu\xE9 cree que dir\xE1n ellos si supieran como se siente?"
+    isGoodDecision: 1
     nextPanelIndex: 6
-    isGoodEnding: 0
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: c2fe3b51b37501548ad0f9a5aaa5ca6f, type: 3}
+    Character: {fileID: 21300000, guid: b2c060a4f8460a1438ef75fce9c4ac07, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
+  isEndPanel: 0

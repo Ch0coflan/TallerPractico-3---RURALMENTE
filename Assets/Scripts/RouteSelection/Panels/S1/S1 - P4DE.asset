@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P4DE
   m_EditorClassIdentifier: 
-  text: "Si, tal vez, si uno empieza, los otros tambi\xE9n se animan. Me ha servido
-    mucho esta charla."
+  text: Hablarlo me hizo dar cuenta de muchas cosas que hago sin un motivo claro.
+    Muchas gracias, de verdad.
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

@@ -25,7 +25,8 @@ public class StoryManager : MonoBehaviour
     public Button returnButton;
     public Image BG;
     public Image Character;
-    public Transform optionContainer; 
+    public Transform optionContainer;
+    [SerializeField] private bool _isFirstPanel = true;
     //public AudioSource characterAudioSource;
     //public Animator animator;
 
@@ -70,11 +71,21 @@ public class StoryManager : MonoBehaviour
         PanelData currentPanel = currentStory[currentPanelIndex];
         infoText.text = currentPanel.text;
 
+        if(currentPanelIndex == 0)
+        {
+            _isFirstPanel = true;
+            if(_isFirstPanel)
+            {
+                BG.sprite = currentPanel.firstBG;
+                Character.sprite = currentPanel.firstCharacter;
+            }
+        }
+
         if (currentPanel != null)
         {
             option1.gameObject.SetActive(false);
             option2.gameObject.SetActive(false);
-
+           
             if (currentPanel.options.Count > 0)
             {
                 option1.gameObject.SetActive(true);
@@ -109,8 +120,13 @@ public class StoryManager : MonoBehaviour
         }
         DecisionTracker.Instance.TrackDecision(option.isGoodDecision);
         currentPanelIndex = option.nextPanelIndex;
-        BG.sprite = option.BG;
-        Character.sprite = option.Character;
+        if (currentPanelIndex > 0)
+        {
+            _isFirstPanel = false;
+            BG.sprite = option.BG;
+            Character.sprite = option.Character;
+        }
+        
         ShowPanel();  
     }
 
@@ -125,7 +141,9 @@ public class StoryManager : MonoBehaviour
             case 4: ReturnToMenu5(); break;
         }
     }
-        
+
+    #region Returns
+
     public void ReturnToMenu1()
     {
         onEndedFirstStory?.Invoke();
@@ -167,4 +185,5 @@ public class StoryManager : MonoBehaviour
         currentPanelIndex = 0;
         currentStory = null;   
     }
+    #endregion
 }

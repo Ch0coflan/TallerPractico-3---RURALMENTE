@@ -12,15 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P3D
   m_EditorClassIdentifier: 
-  text: s2 p3d
+  text: "Creo que me ver\xEDan como una exagerada. Siempre he sido fuerte, nunca
+    me ha gustado quejarme, pero ahora ya no puedo m\xE1s."
   options:
-  - optionText: s2 p4de
+  - optionText: No es exagerar, es comunicar lo que sentimos. Todos necesitamos ayuda
+      alguna vez, incluso las mas fuertes.
+    isGoodDecision: 0
     nextPanelIndex: 13
-    isGoodEnding: 0
-    BG: {fileID: 0}
-    Character: {fileID: 0}
-  - optionText: s2 p4de2
+    BG: {fileID: 21300000, guid: bdfccd09bcf40bf4290900044e24703d, type: 3}
+    Character: {fileID: 21300000, guid: 345ee6b8534c9c24dad0eee84bce6692, type: 3}
+  - optionText: "Quiz\xE1 hablar con sus hijos sirva para que le ayuden m\xE1s. No
+      siempre es f\xE1cil, pero algo se puede hacer."
+    isGoodDecision: 0
     nextPanelIndex: 14
-    isGoodEnding: 0
-    BG: {fileID: 0}
-    Character: {fileID: 0}
+    BG: {fileID: 21300000, guid: 6b377cc9ba0e7704a83c748a1eb4e01e, type: 3}
+    Character: {fileID: 21300000, guid: f01aa71810f23b748b8948f1e97abd25, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
+  isEndPanel: 0

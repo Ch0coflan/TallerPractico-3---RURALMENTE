@@ -16,16 +16,16 @@ MonoBehaviour:
     A veces paso d\xEDas trabajando sin parar y, si me detengo, la comida no llega
     a la mesa de mi casa."
   options:
-  - optionText: "Vivir as\xED constantemente desgasta mucho. Ha pensado en como podr\xEDa
-      darle un respiro a su cuerpo y mente?"
+  - optionText: Y su familia como se siente al respecto?
+    isGoodDecision: 1
+    nextPanelIndex: 4
+    BG: {fileID: 21300000, guid: 98c0dce1368b21a48aecb27bb5b6f88e, type: 3}
+    Character: {fileID: 21300000, guid: c8296bc4e0202af4391807f608725202, type: 3}
+  - optionText: Ya hablo con alguien antes de venir aqui?
     isGoodDecision: 0
     nextPanelIndex: 5
-    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
-  - optionText: "Ese ritmo puede parecer normal en el campo, pero no es saludable.
-      Cuidarse y descansar tambi\xE9n hace parte del trabajo."
-    isGoodDecision: 1
-    nextPanelIndex: 6
-    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
+    BG: {fileID: 21300000, guid: a3f8ebec83e639a49904377e74aaa349, type: 3}
+    Character: {fileID: 21300000, guid: 09a32541f459607488c18d64a6069733, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 0

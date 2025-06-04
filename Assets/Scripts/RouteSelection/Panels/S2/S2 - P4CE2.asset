@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S2 - P4CE2
   m_EditorClassIdentifier: 
-  text: s2 p4ce2
+  text: "Tiene raz\xF3n... siempre he pensado en no molestar, pero yo ya estoy muy
+    cansada. Me poder hablar con mi hijo, para que entienda como me estoy sintiendo."
   options: []
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 1

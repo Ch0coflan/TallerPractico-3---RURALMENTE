@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5a188c4d1bb004dac35299e62cb72e, type: 3}
   m_Name: S1 - P3A
   m_EditorClassIdentifier: 
-  text: "A veces pienso en dejar  todo tirado e irme lejos. Pero, a donde? Esta es
-    la vida que conozco, y aunque no quiero seguir as\xED, tampoco se que hacer."
+  text: "Hay d\xEDas en los que me duele todo, pero no tengo en quien apoyarme. En
+    el campo, si uno se queja, lo tratan a uno de flojo. As\xED nos criaron, ense\xF1ados
+    a aguantar."
   options:
-  - optionText: Buscar ayuda no significa abandonar todo. Es el primer paso para
-      recuperar el control.
+  - optionText: "\xBFQu\xE9 es lo que m\xE1s lo agota,  lo f\xEDsico o lo mental?"
     isGoodDecision: 1
-    nextPanelIndex: 7
-    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
-  - optionText: Podemos intentar distraernos para que no piense tanto en eso.
+    nextPanelIndex: 6
+    BG: {fileID: 21300000, guid: 98c0dce1368b21a48aecb27bb5b6f88e, type: 3}
+    Character: {fileID: 21300000, guid: c8296bc4e0202af4391807f608725202, type: 3}
+  - optionText: Aguantar hasta que punto?
     isGoodDecision: 0
-    nextPanelIndex: 8
-    BG: {fileID: 21300000, guid: bd0f587052675724a911c60615c6c9c5, type: 3}
-    Character: {fileID: 21300000, guid: bf7ed797bf49e964fa96877b727f891f, type: 3}
+    nextPanelIndex: 7
+    BG: {fileID: 21300000, guid: a3f8ebec83e639a49904377e74aaa349, type: 3}
+    Character: {fileID: 21300000, guid: 09a32541f459607488c18d64a6069733, type: 3}
+  firstBG: {fileID: 0}
+  firstCharacter: {fileID: 0}
   isEndPanel: 0
