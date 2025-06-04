@@ -31,24 +31,17 @@ namespace Scenes.Script
          {
              if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
              {
-                 Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-                 if (Physics.Raycast(ray, out RaycastHit hit))
-                 {
-                     if (hit.collider.CompareTag("Interactable"))
-                     {
-                         zoomController.ToggleZoom();
-                     }
-                     else if (hit.collider.CompareTag("Casa"))
-                    {
-                        cameraHouse.Priority = 20;
-                        cinemachineCamera.Priority = 10;
-                        animationActive.PlayAnimation();
-                        cameraFollowTarget = hit.transform;
-                        StartCoroutine(TransitionScene());
-                        
-                    }
-                }
+                 Vector2 touchPos = Input.GetTouch(0).position;
+                 HandleInteraction(touchPos);
              }
+
+             
+             if (Input.GetMouseButtonDown(0))
+             {
+                 Vector2 mousePos = Input.mousePosition;
+                 HandleInteraction(mousePos);
+             }
+             
 
              if (isFocusing && _camTarget != null)
              {
@@ -65,6 +58,26 @@ namespace Scenes.Script
              
          }
 
+         private void HandleInteraction(Vector2 screenPosition)
+         {
+             Ray ray = Camera.main.ScreenPointToRay(screenPosition);
+             if (Physics.Raycast(ray, out RaycastHit hit))
+             {
+                 if (hit.collider.CompareTag("Interactable"))
+                 {
+                     zoomController.ToggleZoom();
+                 }
+                 else if (hit.collider.CompareTag("Casa"))
+                 {
+                     cameraHouse.Priority = 20;
+                     cinemachineCamera.Priority = 10;
+                     animationActive.PlayAnimation();
+                     cameraFollowTarget = hit.transform;
+                     StartCoroutine(TransitionScene());
+                        
+                 }
+             }
+         }
          public void ToggleCanvas()
         {
             _isActive = !_isActive;
