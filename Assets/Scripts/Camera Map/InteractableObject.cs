@@ -102,6 +102,7 @@ namespace Camera_Map
         {
             Debug.Log($"Cargando escena {sceneIndex}...");
             SceneManager.LoadScene(sceneIndex);
+            AudioManager.Instance.PlayMusic("MusicaCasa");
         }
 
         public IEnumerator TransitionScene()

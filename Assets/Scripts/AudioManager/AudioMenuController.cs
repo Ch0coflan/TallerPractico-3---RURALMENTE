@@ -7,6 +7,8 @@ public class AudioMenuController : MonoBehaviour
 
     private void Start()
     {
+        audioToggle = GetComponent<Toggle>();
+        
         // Asegurarse de que esté en el estado guardado previamente
         bool isAudioOn = PlayerPrefs.GetInt("audioOn", 1) == 1; // 1 por defecto (encendido)
         audioToggle.isOn = isAudioOn;
@@ -16,7 +18,7 @@ public class AudioMenuController : MonoBehaviour
         audioToggle.onValueChanged.AddListener(ApplyAudioState);
     }
 
-    private void ApplyAudioState(bool isOn)
+    public void ApplyAudioState(bool isOn)
     {
         PlayerPrefs.SetInt("audioOn", isOn ? 1 : 0);
 
