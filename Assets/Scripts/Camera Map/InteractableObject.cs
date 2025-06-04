@@ -1,13 +1,10 @@
-using System;
 using System.Collections;
-using Camera_Map;
+using Scenes.Script;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
-
-namespace Scenes.Script
+namespace Camera_Map
 {
     public class InteractableObject : MonoBehaviour
     {

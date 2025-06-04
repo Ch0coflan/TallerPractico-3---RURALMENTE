@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Water, UI, Outlined, No Outlined
 - Active game object:
-  - Name: ReturnMenuButton
-  - Tag: Untagged
-  - Layer: UI
+  - Name: Main Camera
+  - Tag: MainCamera
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
