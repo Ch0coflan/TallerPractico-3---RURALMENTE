@@ -23,10 +23,12 @@ MonoBehaviour:
     Character: {fileID: 21300000, guid: f01aa71810f23b748b8948f1e97abd25, type: 3}
   - optionText: " Que le parece si  practicamos unos ejercicios de relajaci\xF3n
       mientras se van dando las cosas?  Podemos volver a hablar cuando quiera"
-    isGoodDecision: 0
+    isGoodDecision: 1
     nextPanelIndex: 10
     BG: {fileID: 21300000, guid: bdfccd09bcf40bf4290900044e24703d, type: 3}
     Character: {fileID: 21300000, guid: 345ee6b8534c9c24dad0eee84bce6692, type: 3}
   firstBG: {fileID: 0}
   firstCharacter: {fileID: 0}
   isEndPanel: 0
+  charAnim: Shake
+  charSound: {fileID: 0}

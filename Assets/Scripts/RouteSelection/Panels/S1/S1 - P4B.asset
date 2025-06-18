@@ -16,15 +16,17 @@ MonoBehaviour:
     cosas salgan bien y se arreglen, porque lo normal es tratarse as\xED, a las patadas."
   options:
   - optionText: Y a usted le parece eso justo?
-    isGoodDecision: 0
+    isGoodDecision: 1
     nextPanelIndex: 14
-    BG: {fileID: 21300000, guid: b003c3ac497a6c0489035b0945d6196a, type: 3}
+    BG: {fileID: 21300000, guid: 19c74e6e940996b4699044b479d9ea79, type: 3}
     Character: {fileID: 21300000, guid: cc30dd50620b5904ebda213772571760, type: 3}
   - optionText: "Quiz\xE1s si trabaja mas las cosas se arreglen mas r\xE1pido."
     isGoodDecision: 0
     nextPanelIndex: 15
-    BG: {fileID: 21300000, guid: 2d679f14ad494904e8f1732d9a5e1a99, type: 3}
+    BG: {fileID: 21300000, guid: 8824e2d0a5446a749abdbcdd1b79d9a6, type: 3}
     Character: {fileID: 21300000, guid: dd8dbbe87141a0b4691b3135c39d76c8, type: 3}
   firstBG: {fileID: 0}
   firstCharacter: {fileID: 0}
   isEndPanel: 0
+  charAnim: Shake
+  charSound: {fileID: 0}

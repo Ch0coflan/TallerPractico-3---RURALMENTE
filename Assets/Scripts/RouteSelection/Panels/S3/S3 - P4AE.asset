@@ -17,3 +17,5 @@ MonoBehaviour:
   firstBG: {fileID: 0}
   firstCharacter: {fileID: 0}
   isEndPanel: 1
+  charAnim: Shake
+  charSound: {fileID: 0}

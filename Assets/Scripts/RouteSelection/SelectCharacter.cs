@@ -9,7 +9,6 @@ public class SelectCharacter : MonoBehaviour
     public UnityEvent onSelectCharacter;
     public EventTrigger EventTrigger;
     public Image charImage;
-    public Outline outline;
     public GameObject homePanel;
     public GameObject routePanel;
     [SerializeField] private bool isRouteCompleted = false;
@@ -18,7 +17,6 @@ public class SelectCharacter : MonoBehaviour
     private void Awake()
     {
         charImage = GetComponent<Image>();
-        outline = GetComponent<Outline>();
         EventTrigger = GetComponent<EventTrigger>();
         homePanel.SetActive(true);
         routePanel.SetActive(false);
@@ -53,7 +51,6 @@ public class SelectCharacter : MonoBehaviour
             Debug.Log("Historia Finalizada y marcada como completada");
             homePanel.SetActive(true);
             routePanel.SetActive(false);
-            outline.enabled = false;
             EventTrigger.enabled = false;
             charImage.color = Color.gray;
         }

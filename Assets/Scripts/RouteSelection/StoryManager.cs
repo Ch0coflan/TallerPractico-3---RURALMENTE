@@ -70,6 +70,7 @@ public class StoryManager : MonoBehaviour
         }
         PanelData currentPanel = currentStory[currentPanelIndex];
         infoText.text = currentPanel.text;
+
         for(int i = 0; i < Characters.Length; i++)
         {
             bool isActive = (i == _storyID);
