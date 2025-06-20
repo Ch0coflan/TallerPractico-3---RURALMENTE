@@ -55,27 +55,46 @@ namespace Camera_Map
              
          }
 
-         private void HandleInteraction(Vector2 screenPosition)
-         {
-             Ray ray = Camera.main.ScreenPointToRay(screenPosition);
-             if (Physics.Raycast(ray, out RaycastHit hit))
-             {
-                 if (hit.collider.CompareTag("Interactable"))
-                 {
-                     zoomController.ToggleZoom();
-                 }
-                 else if (hit.collider.CompareTag("Casa"))
-                 {
-                     cameraHouse.Priority = 20;
-                     cinemachineCamera.Priority = 10;
-                     animationActive.PlayAnimation();
-                     cameraFollowTarget = hit.transform;
-                     StartCoroutine(TransitionScene());
-                        
-                 }
-             }
-         }
-         public void ToggleCanvas()
+        private void HandleInteraction(Vector2 screenPosition)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(screenPosition);
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                if (hit.collider.CompareTag("Interactable"))
+                {
+                    var touchedObject = hit.collider.GetComponent<InteractableObject>();
+
+                    if (InteractableManager.CurrentActive == touchedObject)
+                    {
+                        touchedObject.HideCanvas();
+                        zoomController.ZoomOut();
+                        InteractableManager.ClearActive();
+                    }
+                    else
+                    {
+                        zoomController.ZoomIn(touchedObject.actualFollowTarget);
+                        InteractableManager.SetActiveObject(touchedObject);
+                        touchedObject.ToggleCanvas();
+                    }
+                }
+                else if (hit.collider.CompareTag("Casa"))
+                {
+                    cameraHouse.Priority = 20;
+                    cinemachineCamera.Priority = 10;
+                    animationActive.PlayAnimation();
+                    cameraFollowTarget = hit.transform;
+                    StartCoroutine(TransitionScene());
+                }
+                else
+                {
+                    // Tocas fuera
+                    zoomController.ZoomOut(); 
+                    InteractableManager.ClearActive();
+                }
+            }
+        }
+
+        public void ToggleCanvas()
         {
             _isActive = !_isActive;
             canvas.SetActive(_isActive);
@@ -86,6 +105,7 @@ namespace Camera_Map
                 isFocusing = true;
             }
         }
+
 
         public void HideCanvas()
         {

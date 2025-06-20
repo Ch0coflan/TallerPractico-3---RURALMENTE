@@ -17,7 +17,8 @@ namespace Scenes.Script
         {
             Vector2 inputDelta = Vector2.zero;
 
-            //Touch
+
+#if UNITY_ANDROID || UNITY_IOS
             if (Input.touchCount == 1)
             {
                 Touch touch = Input.GetTouch(0);
@@ -37,8 +38,10 @@ namespace Scenes.Script
                     _isDragging = false;
                 }
             }
-            //PC
-            else if (Input.GetMouseButtonDown(0))
+#endif
+
+#if UNITY_STANDALONE || UNITY_EDITOR
+            if (Input.GetMouseButtonDown(0))
             {
                 _previousInputPos = Input.mousePosition;
                 _isDragging = true;
@@ -52,6 +55,7 @@ namespace Scenes.Script
             {
                 _isDragging = false;
             }
+#endif
 
             // Movimiento
             if (inputDelta != Vector2.zero)

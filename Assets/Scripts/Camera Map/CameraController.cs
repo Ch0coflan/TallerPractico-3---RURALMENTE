@@ -13,6 +13,9 @@ namespace Scenes.Script
         public float normalFOV = 60f;
         public float zoomSpeed = 5f;
 
+        public Transform cameraTarget; 
+        public float followSpeed = 5f;
+
         private bool isZoomed = false;
         private float targetFOV;
 
@@ -24,14 +27,22 @@ namespace Scenes.Script
                 return;
             }
 
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             targetFOV = normalFOV;
             cineCam.Lens.FieldOfView = normalFOV;
         }
 
         void Update()
         {
-           
+            
             cineCam.Lens.FieldOfView = Mathf.Lerp(cineCam.Lens.FieldOfView, targetFOV, Time.deltaTime * zoomSpeed);
+
+           
+            if (cameraTarget != null)
+            {
+                transform.position = Vector3.Lerp(transform.position, cameraTarget.position, Time.deltaTime * followSpeed);
+            }
 
             
             if (Input.GetKeyDown(KeyCode.Z))
@@ -44,9 +55,23 @@ namespace Scenes.Script
         {
             isZoomed = !isZoomed;
             targetFOV = isZoomed ? zoomFOV : normalFOV;
+
+            if (!isZoomed)
+                cameraTarget = null; 
         }
 
-        public void ZoomIn() => targetFOV = zoomFOV;
-        public void ZoomOut() => targetFOV = normalFOV;
+        public void ZoomIn(Transform target)
+        {
+            isZoomed = true;
+            targetFOV = zoomFOV;
+            cameraTarget = target;
+        }
+
+        public void ZoomOut()
+        {
+            isZoomed = false;
+            targetFOV = normalFOV;
+            cameraTarget = null;
+        }
     }
 }
