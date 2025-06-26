@@ -264,7 +264,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Hola!
 
-    Bienvenido al mapa de ruralmente.
+    Bienvenido al mapa de Ruralmente.
 
     Utiliza el lapiz para
     moverte por el mapa
@@ -1453,8 +1453,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 31.283722, y: 27.3867, z: 37.91143}
-  m_Center: {x: 6.7830505, y: 31.629274, z: -12.462597}
+  m_Size: {x: 57.46945, y: 71.42511, z: 74.26965}
+  m_Center: {x: 7.745453, y: 20.380547, z: -8.977104}
 --- !u!1 &429016924
 GameObject:
   m_ObjectHideFlags: 0
