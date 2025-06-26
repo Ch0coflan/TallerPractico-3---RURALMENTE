@@ -19,13 +19,15 @@ MonoBehaviour:
   - optionText: Si, soy yo. Es algo nuevo o algo que ya venia sintiendo hace tiempo?
     isGoodDecision: 1
     nextPanelIndex: 1
-    BG: {fileID: 21300000, guid: 98c0dce1368b21a48aecb27bb5b6f88e, type: 3}
+    BG: {fileID: 21300000, guid: 9cf951aa0e014ad4b86ae18d771400c7, type: 3}
     Character: {fileID: 21300000, guid: c8296bc4e0202af4391807f608725202, type: 3}
   - optionText: "Claro, cu\xE9nteme, a que se debe eso?"
     isGoodDecision: 1
     nextPanelIndex: 2
-    BG: {fileID: 21300000, guid: 98c0dce1368b21a48aecb27bb5b6f88e, type: 3}
+    BG: {fileID: 21300000, guid: 9cf951aa0e014ad4b86ae18d771400c7, type: 3}
     Character: {fileID: 21300000, guid: c8296bc4e0202af4391807f608725202, type: 3}
-  firstBG: {fileID: 21300000, guid: c1f861f697237054f9f948657e9a57dc, type: 3}
+  firstBG: {fileID: 21300000, guid: 356167ae4bbc16f4381928387360bbf3, type: 3}
   firstCharacter: {fileID: 21300000, guid: cfb36d312f577b849bd2b332894101c3, type: 3}
   isEndPanel: 0
+  charAnim: 
+  charSound: {fileID: 0}

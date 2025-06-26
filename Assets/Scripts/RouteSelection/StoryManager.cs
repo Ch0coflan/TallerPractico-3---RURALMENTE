@@ -27,8 +27,8 @@ public class StoryManager : MonoBehaviour
     public Image[] Characters;
     public Transform optionContainer;
     [SerializeField] private bool _isFirstPanel = true;
-    //public AudioSource characterAudioSource;
-    //public Animator animator;
+    public AudioSource characterAudioSource;
+    public Animator animator;
 
     private List<PanelData> currentStory;
     private int currentPanelIndex = 0;  
@@ -70,6 +70,7 @@ public class StoryManager : MonoBehaviour
         }
         PanelData currentPanel = currentStory[currentPanelIndex];
         infoText.text = currentPanel.text;
+
         for(int i = 0; i < Characters.Length; i++)
         {
             bool isActive = (i == _storyID);
@@ -84,6 +85,18 @@ public class StoryManager : MonoBehaviour
                 BG.sprite = currentPanel.firstBG;
                 Characters[_storyID].sprite = currentPanel.firstCharacter;
             }
+        }
+
+        if(!string.IsNullOrEmpty(currentPanel.charAnim))
+        {
+            animator = Characters[_storyID].gameObject.GetComponent<Animator>();
+            animator.SetTrigger(currentPanel.charAnim);
+        }
+
+        if(currentPanel.charSound != null)
+        {
+            characterAudioSource = Characters[_storyID].gameObject.GetComponent<AudioSource>(); 
+            characterAudioSource.PlayOneShot(currentPanel.charSound);
         }
 
         if (currentPanel != null)

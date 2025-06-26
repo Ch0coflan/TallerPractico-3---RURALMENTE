@@ -2,49 +2,68 @@ using UnityEngine;
 
 namespace Scenes.Script
 {
-    public class CameraDrag : MonoBehaviour
+    public class CameraDragController : MonoBehaviour
     {
-        public Transform cameraTarget; 
-        private Vector2 _previousTouchPos;
+        public Transform cameraTarget;
+        private Vector2 _previousInputPos;
         private bool _isDragging = false;
 
-        public float minX = -50f, maxX = 50f, minZ = -50f, maxZ = 50f;
-        public float smoothSpeed = 10f; 
-        public float dragSpeed = 0.01f; 
+        public float smoothSpeed = 10f;
+        public float dragSpeed = 0.01f;
 
         private Vector3 _currentVelocity;
 
         private void Update()
         {
+            Vector2 inputDelta = Vector2.zero;
+
+
+#if UNITY_ANDROID || UNITY_IOS
             if (Input.touchCount == 1)
             {
                 Touch touch = Input.GetTouch(0);
 
                 if (touch.phase == TouchPhase.Began)
                 {
-                    _previousTouchPos = touch.position;
+                    _previousInputPos = touch.position;
                     _isDragging = true;
                 }
                 else if (touch.phase == TouchPhase.Moved && _isDragging)
                 {
-                    Vector2 touchDelta = touch.position - _previousTouchPos;
-
-                    Vector3 move = new Vector3(-touchDelta.x * dragSpeed, 0, -touchDelta.y * dragSpeed);
-                    Vector3 targetPos = cameraTarget.position + move;
-
-                    
-                    targetPos.x = Mathf.Clamp(targetPos.x, minX, maxX);
-                    targetPos.z = Mathf.Clamp(targetPos.z, minZ, maxZ);
-
-                    
-                    cameraTarget.position = Vector3.SmoothDamp(cameraTarget.position, targetPos, ref _currentVelocity, 1f / smoothSpeed);
-
-                    _previousTouchPos = touch.position;
+                    inputDelta = touch.position - _previousInputPos;
+                    _previousInputPos = touch.position;
                 }
-                else if (touch.phase == TouchPhase.Ended)
+                else if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
                 {
                     _isDragging = false;
                 }
+            }
+#endif
+
+#if UNITY_STANDALONE || UNITY_EDITOR
+            if (Input.GetMouseButtonDown(0))
+            {
+                _previousInputPos = Input.mousePosition;
+                _isDragging = true;
+            }
+            else if (Input.GetMouseButton(0) && _isDragging)
+            {
+                inputDelta = (Vector2)Input.mousePosition - _previousInputPos;
+                _previousInputPos = Input.mousePosition;
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                _isDragging = false;
+            }
+#endif
+
+            // Movimiento
+            if (inputDelta != Vector2.zero)
+            {
+                Vector3 move = new Vector3(-inputDelta.x * dragSpeed, 0, -inputDelta.y * dragSpeed);
+                Vector3 targetPosition = cameraTarget.position + move;
+                cameraTarget.position = Vector3.SmoothDamp(cameraTarget.position, targetPosition, ref _currentVelocity,
+                    1f / smoothSpeed);
             }
         }
     }
