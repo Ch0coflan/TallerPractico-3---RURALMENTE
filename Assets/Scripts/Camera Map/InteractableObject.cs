@@ -26,21 +26,24 @@ namespace Camera_Map
 
          private void Update()
          {
-             if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
+#if UNITY_ANDROID || UNITY_IOS
+            if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
              {
                  Vector2 touchPos = Input.GetTouch(0).position;
                  HandleInteraction(touchPos);
              }
+#endif
+#if  UNITY_STANDALONE || UNITY_EDITOR
 
-             
-             if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
              {
                  Vector2 mousePos = Input.mousePosition;
                  HandleInteraction(mousePos);
              }
-             
+#endif
 
-             if (isFocusing && _camTarget != null)
+
+            if (isFocusing && _camTarget != null)
              {
                  Vector3 targetPos = transform.position;
                  targetPos.y = _camTarget.position.y; 
