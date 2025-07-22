@@ -12,11 +12,11 @@ public class BackToMenu : MonoBehaviour
 
     public void OnMapButton()
     {
-        LoadScene(1);
+        LoadScene(2);
     }
 
     public void OnMenuButton()
     {
-        LoadScene(0);
+        LoadScene(1);
     }
 }

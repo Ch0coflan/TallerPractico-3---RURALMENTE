@@ -134,7 +134,7 @@ namespace Camera_Map
             yield return new WaitForSeconds(8);
             anim.SetTrigger("Out");
             yield return new WaitForSeconds(2);
-            LoadScene(2);
+            LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         }
 
