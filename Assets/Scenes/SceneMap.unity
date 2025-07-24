@@ -7353,15 +7353,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialPanel: {fileID: 1997208881}
   tutorialText: {fileID: 142273835}
-  tutorialTextAndroid: Hola! Bienvenido al mapa de Ruralmente. Utiliza el dedo para
-    moverte por el mapa y descubrir curiosidades que te pueden interesar!!!  Cuando
-    termines, toca la casa de en medio para continuar
-  tutorialTextPC: Hola! Bienvenido al mapa de Ruralmente. Utiliza el cursor para
-    moverte por el mapa y descubrir curiosidades que te pueden interesar!!!  Cuando
-    termines, toca la casa de en medio para continuar
-  tutorialTextWebGL: Hola! Bienvenido al mapa de Ruralmente. Utiliza el cursor para
-    moverte por el mapa y descubrir curiosidades que te pueden interesar!!!  Cuando
-    termines, toca la casa de en medio para continuar
+  tutorialTextAndroid: "Hola! \nBienvenido al mapa de Ruralmente. \nUtiliza el dedo
+    para moverte por el mapa \ny descubrir curiosidades que te pueden interesar!!! 
+    \n\nCuando termines, toca la casa de en medio para continuar."
+  tutorialTextPC: "Hola! \nBienvenido al mapa de Ruralmente. \nUtiliza el cursor
+    para moverte por el mapa \ny descubrir curiosidades que te pueden interesar!!! 
+    \n\nCuando termines, toca la casa de en medio para continuar."
+  tutorialTextWebGL: "Hola! \nBienvenido al mapa de Ruralmente. \nUtiliza el cursor
+    para moverte por el mapa y \ndescubrir curiosidades que te pueden interesar!!!
+    \n \nCuando termines, toca la casa de en medio para continuar."
 --- !u!1001 &703917574
 PrefabInstance:
   m_ObjectHideFlags: 0

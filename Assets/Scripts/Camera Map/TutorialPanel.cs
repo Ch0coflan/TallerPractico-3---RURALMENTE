@@ -7,8 +7,12 @@ namespace Camera_Map
     {
         public GameObject tutorialPanel;
         public TMP_Text tutorialText;
+        
+        [TextArea(10,20)]
         public string tutorialTextAndroid;
+        [TextArea(10,20)]
         public string tutorialTextPC;
+        [TextArea(10,20)]
         public string tutorialTextWebGL;
 
         private void Start()
