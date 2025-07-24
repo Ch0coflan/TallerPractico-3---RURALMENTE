@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/AndinoIntro.unity
+    guid: 3652585c25cf4ef46891ab25b8563759
+  - enabled: 1
     path: Assets/Scenes/UI Map.unity
     guid: eb1aac64d93b44c43aa45d918216e4e7
   - enabled: 1

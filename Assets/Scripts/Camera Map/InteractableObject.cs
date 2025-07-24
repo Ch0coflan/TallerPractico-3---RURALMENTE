@@ -3,12 +3,13 @@ using Scenes.Script;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 namespace Camera_Map
 {
     public class InteractableObject : MonoBehaviour
     {
-         public GameObject canvas;
+         public GameObject infoPanel;
          public CameraController zoomController;
          private bool _isActive = false;
          public Transform cameraFollowTarget; 
@@ -70,7 +71,7 @@ namespace Camera_Map
                     if (InteractableManager.CurrentActive == touchedObject)
                     {
                         touchedObject.HideCanvas();
-                        zoomController.ZoomOut();
+                        
                         InteractableManager.ClearActive();
                     }
                     else
@@ -100,7 +101,7 @@ namespace Camera_Map
         public void ToggleCanvas()
         {
             _isActive = !_isActive;
-            canvas.SetActive(_isActive);
+            infoPanel.SetActive(_isActive);
 
             if (_isActive)
             {
@@ -113,7 +114,8 @@ namespace Camera_Map
         public void HideCanvas()
         {
             _isActive = false;
-            canvas.SetActive(false);
+            zoomController.ZoomOut();
+            infoPanel.SetActive(false);
         }
 
         public bool IsActive()
@@ -134,7 +136,7 @@ namespace Camera_Map
             yield return new WaitForSeconds(8);
             anim.SetTrigger("Out");
             yield return new WaitForSeconds(2);
-            LoadScene(2);
+            LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         }
 
