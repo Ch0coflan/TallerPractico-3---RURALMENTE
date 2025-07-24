@@ -24,6 +24,7 @@ public class IntroController : MonoBehaviour
 
     private void EndVideo(VideoPlayer vp)
     {
+        Debug.Log("Video playback finished. Loading next scene...");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

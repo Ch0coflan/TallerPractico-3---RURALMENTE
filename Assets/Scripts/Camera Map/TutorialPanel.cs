@@ -1,16 +1,38 @@
+using TMPro;
 using UnityEngine;
 
-public class TutorialPanel : MonoBehaviour
+namespace Camera_Map
 {
-    public GameObject tutorialPanel;
-
-    private void Start()
+    public class TutorialPanel : MonoBehaviour
     {
-        tutorialPanel.SetActive(true);
-    }
+        public GameObject tutorialPanel;
+        public TMP_Text tutorialText;
+        public string tutorialTextAndroid;
+        public string tutorialTextPC;
+        public string tutorialTextWebGL;
 
-    public void CloseTutorialPanel()
-    {
-        tutorialPanel.SetActive(false);
+        private void Start()
+        {
+            tutorialPanel.SetActive(true);
+            switch (Application.platform)
+            {
+                case (RuntimePlatform.Android):
+                    tutorialText.text = tutorialTextAndroid;
+                    break;
+                case (RuntimePlatform.WindowsPlayer):
+                    tutorialText.text = tutorialTextPC;
+                    break;
+                case (RuntimePlatform.WebGLPlayer):
+                    tutorialText.text = tutorialTextWebGL;
+                    break;
+            }
+        }
+
+        public void CloseTutorialPanel()
+        {
+            tutorialPanel.SetActive(false);
+        }
+        
+        
     }
 }
